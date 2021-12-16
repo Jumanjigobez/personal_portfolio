@@ -142,11 +142,13 @@ label #close{
 	
 	
 }
-#visitor, #visitor2, .a{
+#visitor, #visitor2 .a{
 	font-weight: bold;
 	color: lime;
 }
-
+#visitor3{
+  font-weight: bold;
+}
 .htext3{
 	font-weight: bold;
 }
@@ -259,7 +261,7 @@ label #close{
   text-align: justify;
 }
 .abouttext marquee{
-  color: lime;
+  color: limegreen;
   font-size: 25px;
   font-weight: bold;
 }
@@ -459,7 +461,7 @@ label #close{
 #projects{
   background: #121212;
   color: #fafafa;
-  min-height: 999px;
+  min-height: 1600px;
 }
 .pro1,.pro2,.pro3{
   width: calc(33% - 20px);
@@ -498,6 +500,172 @@ label #close{
 .gif img:hover{
   transform: scale(1.2);
 }
+
+
+
+
+
+
+
+
+
+#contact{
+  background: #1c2841;
+  color: #fafafa;
+  min-height: 1200px;
+}
+.contact-info{
+  flex-basis: 50%;
+  text-align: justify;
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 15px 15px;
+}
+.contact-info p{
+  margin-top: 12px;
+}
+.contact-menu{
+  margin-top: 15px;
+  padding: 15px 15px 15px 0px;
+}
+.contact-menu li{
+  list-style-type: none;
+  padding: 15px 15px 15px 0px;
+}
+
+.contact-menu li i{
+  float: left;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.contact-menu li p{
+  margin-top: 2px;
+  margin-left: 50px;
+}
+
+.contact-form{
+  flex-basis: 30%;
+  margin-top: 20px;
+  width: 90%;
+  height: 650px;
+  background: #222;
+  color: #fafafa;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 25px;
+  padding: 15px 15px;
+  padding: 20px 25px;
+  border-radius: 6px;
+  
+  transition:all ease-in 0.5s;
+}
+.contact-form:hover{
+  box-shadow: 15px 20px 15px rgb(0,128,0,30%);
+}
+
+.cform{
+  margin-top: 15px;
+}
+
+.input-data{
+  width: 100%;
+  background: #222;
+
+  position: relative;
+}
+.input-data textarea{
+  width: 100%;
+  min-height: 71px;
+  resize: none;
+  background: #222;
+  color: #fafafa;
+  font-size: 20px;
+  border: none;
+  margin-top: 50px;
+  border-bottom: 2px solid silver;
+}
+.input-data input{
+  width: 100%;
+  color: #fafafa;
+  font-size: 20px;
+  border: none;
+  border-bottom: 2px solid silver;
+  margin-top: 50px;
+  background: #222;
+}
+.input-data input:focus, textarea:focus{
+  outline: none;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label /*textarea:focus ~ label, textarea:valid ~ label*/{
+  transform: translateY(-20px);
+  color: limegreen;
+}
+textarea:focus ~ label, textarea:valid ~ label{
+  transform: translateY(-70px);
+  color: limegreen;
+}
+.input-data label{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+.input-data textarea label{
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  margin-top: 0px;
+  transition: all 0.3s ease-in-out;
+}
+.input-data .line{
+  position: absolute;
+  bottom: 1px;
+  height: 2px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  
+}
+.input-data .line1{
+  position: absolute;
+  top: 91%;
+  bottom: 0px;
+  height: 2px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.input-data .line:before, .input-data .line1:before{
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: limegreen;
+  transition: all 0.3s ease-in-out;
+  transform: scaleX(0);
+}
+
+.input-data input:focus ~ .line:before,
+.input-data input:valid ~ .line:before,textarea:focus ~ .line1:before, textarea:valid ~ .line1:before{
+  transform: scaleX(1);
+}
+.input-data .btn{
+  margin-top: 30px;
+  width: 100%;
+}
+.input-data .btn i{
+  transition: all 0.2s ease-in-out;
+}
+.input-data .btn:hover i{
+  position: relative;
+  animation: right 1s infinite;
+}
+
+
 
 
 
@@ -632,5 +800,22 @@ label #close{
 .gif img {
     max-width: 280px;
     max-height: 200px;
+}
+
+
+
+
+.contact-info{
+  font-size: 20px;
+}
+
+.contact-form{
+  font-size: 20px;
+}
+.input-data .line{
+  bottom: 0px;
+}
+.input-data .line1{
+  top: 92%;
 }
 }
