@@ -512,7 +512,7 @@ label #close{
 #contact{
   background: #1c2841;
   color: #fafafa;
-  min-height: 1200px;
+  min-height: 1500px;
 }
 .contact-info{
   flex-basis: 50%;
@@ -666,9 +666,40 @@ textarea:focus ~ label, textarea:valid ~ label{
 }
 
 
+.contact-map{
+  
+  margin-top: 20px;
+  margin-left: 65px;
+  width: 90%;
+  height: 500px;
+  background: #222;
+  color: #fafafa;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 25px;
+  
+  
+  border-radius: 6px;
+  
+  transition:all ease-in 0.5s;
+}
+.contact-map:hover{
+  box-shadow: 15px 20px 15px rgb(0,128,0,30%);
+}
 
 
 
+
+#footer{
+  color: #fafafa;
+  background-color: #121212;
+  text-align: center;
+  
+  padding: 15px;
+}
+#footer h2 i{
+  color: limegreen;
+}
 
 @media (max-width: 850px){
 	.row{
@@ -803,7 +834,9 @@ textarea:focus ~ label, textarea:valid ~ label{
 }
 
 
-
+#contact{
+  min-height: 2000px;
+}
 
 .contact-info{
   font-size: 20px;
@@ -817,5 +850,16 @@ textarea:focus ~ label, textarea:valid ~ label{
 }
 .input-data .line1{
   top: 92%;
+}
+
+.contact-map{
+  margin-left: 20px;
+}
+.contact-map iframe{
+  width: 200;
+  height: 500;
+}
+#footer h2{
+  font-size: 20px;
 }
 }
