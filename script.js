@@ -6,6 +6,7 @@ $(document).ready(function(){
       var count = setInterval(function(){
         var c = parseInt($(".counter").text());
         $(".counter").text((++c).toString());
+        
 
         if(c == 100){
           clearInterval(count);
@@ -13,7 +14,7 @@ $(document).ready(function(){
 
           $(".text").fadeIn(1000);
 
-          $(".text").fadeOut(1500);
+          $(".text").fadeOut(2000);
 
           $(".preloader").addClass("active");
 
