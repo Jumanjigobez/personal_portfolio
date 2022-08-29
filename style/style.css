@@ -775,21 +775,165 @@ textarea:focus ~ label, textarea:valid ~ label{
   position: relative;
   animation: right 1s infinite;
 }
-@keyframes right{
-  0%{
-    left: 0;
-  }
-  50%{
-    left: 10px;
-  }
-  100%{
-    left: 15px;
-  }
-}
-#section_7{
-		margin-top: 25px;
-	}
 
+#section_7{
+	margin-top: 25px;
+}
+
+/*sidebar items*/
+#sidebar{
+	display: none;
+	 position: fixed;
+	 bottom: 10rem;
+	 left: 0.1rem;
+	 z-index: 99; 
+	 border: none;
+	 outline: none;
+	 padding: 15px;
+	 border-radius: 10px;
+	 font-size: 18px;
+	 transition: 0.2s ease-in-out;
+}
+#sidebar_items{
+	position: relative;
+}
+#sidebar_items ul{
+	position: relative;
+}
+#sidebar_items ul li{
+	list-style-type: none;
+	display: block;
+	padding: 0.5rem 0rem;
+}
+#sidebar_items ul li a{
+	border-radius: 50%;
+	padding: 0.3rem 0.5rem;
+	position: relative;
+	transition: 0.2s linear;
+}
+#sidebar_items ul li:nth-child(1) a{
+	border-radius: 50%;
+	padding: 0.3rem 0.7rem;
+	position: relative;
+	transition: 0.2s linear;
+}
+#sidebar_items ul li:nth-child(1):after{
+	content: "";
+	position: absolute;
+	top: 4%;
+	left: 100%;
+	width: 100%;
+	height: 10%;
+	color: lime;
+	font-size: 15px;
+	transition:all 0.2s linear;
+}
+#sidebar_items ul li:nth-child(1):hover:after{
+	content: "Facebook";
+	left: 110%;
+}
+#sidebar_items ul li:nth-child(2):after{
+	content: "";
+	position: absolute;
+	top: 20%;
+	left: 100%;
+	width: 100%;
+	height: 10%;
+	color: lime;
+	font-size: 15px;
+	transition:all 0.2s linear;
+}
+#sidebar_items ul li:nth-child(2):hover:after{
+	content: "Instagram";
+	left: 110%;
+}
+#sidebar_items ul li:nth-child(3):after{
+	content: "";
+	position: absolute;
+	top: 37%;
+	left: 100%;
+	width: 100%;
+	height: 10%;
+	color: lime;
+	font-size: 15px;
+	transition:all 0.2s linear;
+}
+#sidebar_items ul li:nth-child(3):hover:after{
+	content: "YouTube";
+	left: 110%;
+}
+#sidebar_items ul li:nth-child(4):after{
+	content: "";
+	position: absolute;
+	top: 54%;
+	left: 100%;
+	width: 100%;
+	height: 10%;
+	color: lime;
+	font-size: 15px;
+	transition:all 0.2s linear;
+}
+#sidebar_items ul li:nth-child(4):hover:after{
+	content: "Linkedin";
+	left: 110%;
+}
+#sidebar_items ul li:nth-child(5):after{
+	content: "";
+	position: absolute;
+	top: 70%;
+	left: 100%;
+	width: 100%;
+	height: 10%;
+	color: lime;
+	font-size: 15px;
+	transition:all 0.2s linear;
+}
+#sidebar_items ul li:nth-child(5):hover:after{
+	content: "Github";
+	left: 110%;
+}
+#sidebar_items ul li:nth-child(6):after{
+	content: "";
+	position: absolute;
+	top: 87%;
+	left: 100%;
+	width: 100%;
+	height: 10%;
+	color: lime;
+	font-size: 15px;
+	transition:all 0.2s linear;
+}
+#sidebar_items ul li:nth-child(6):hover:after{
+	content: "WhatsApp";
+	left: 110%;
+}
+
+#sidebar_items ul li:nth-child(1) a{
+	border: none;
+	background-color: #1877f2;
+}
+#sidebar_items ul li:nth-child(2) a{
+	border: none;
+	background-color: #c32aa3;
+}
+#sidebar_items ul li:nth-child(3) a{
+	border: none;
+	background-color: #ff0000;
+}
+#sidebar_items ul li:nth-child(4) a{
+	border: none;
+	background-color: #0a66c2;
+}
+#sidebar_items ul li:nth-child(5) a{
+	border: none;
+	background-color: #211F1F;
+}
+#sidebar_items ul li:nth-child(6) a{
+	border: none;
+	background-color: #25d366;
+}
+
+/*Footer section*/
 #footer{
   	padding: 1rem 5rem;
 	background-color: #121212;
@@ -836,6 +980,24 @@ textarea:focus ~ label, textarea:valid ~ label{
 }
 
 @media (max-width: 375px){
+	.preloader{
+		padding: 0rem 1rem;
+	}
+	.preloader:before{ 
+    	font-size: 4em;
+  	} 
+  	.counter{
+   	 	font-size: 8em;
+  	}
+  	.counter:after{
+   	 	font-size: 0.2em;
+  	}
+  	.text{
+	    font-size: 20px;
+	    margin: 5px;
+	    letter-spacing: 3px;
+  	}
+
 	#header{
 	  	padding: 1rem 2rem;
 
@@ -921,6 +1083,9 @@ textarea:focus ~ label, textarea:valid ~ label{
 
 	#section_7{
 		margin-top: 25px;
+	}
+	#sidebar{
+		left: -0.6rem;
 	}
 	#top{
 		right: 20px;

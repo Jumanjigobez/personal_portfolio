@@ -145,13 +145,15 @@ closeMenu = () =>{
 					`;
 }
 
-//for move to top button
+//for move to top button and the sidebar icons
 var top_btn = elem("top");
+var sidebar = elem("sidebar")
 window.addEventListener("scroll", function(){
 	if (this.scrollY > 20) {
 		top_btn.style.display = "block";
+		sidebar.style.display = "block";
 	}else{
 		top_btn.style.display = "none";
-
+		sidebar.style.display = "none";
 	}
 });
