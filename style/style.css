@@ -979,7 +979,7 @@ textarea:focus ~ label, textarea:valid ~ label{
 	display: none;
 }
 
-@media (max-width: 375px){
+@media (max-width: 600px){
 	.preloader{
 		padding: 0rem 1rem;
 	}
