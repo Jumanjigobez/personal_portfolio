@@ -107,7 +107,7 @@ openMenu = () =>{
 	menu_btn.innerHTML = `<p onclick="closeMenu();"><i class="fa fa-times"></i></p>`;
 
 	styleElem.innerHTML = `
-			@media (max-width: 375px){
+			@media (max-width: 600px){
 				#menu{
 					display: block;
 					width: 100%;
@@ -128,7 +128,7 @@ closeMenu = () =>{
 	menu_btn.innerHTML = `<p onclick="openMenu();"><i class="fa fa-bars"></i></p>`;
 
 	styleElem.innerHTML = `
-			@media (max-width: 375px){
+			@media (max-width: 600px){
 				#menu{
 					display: none;
 					width: 100%;
