@@ -564,13 +564,14 @@ a{
 	height: 40%;
 	border-radius: 6px 6px 0px 0px;
 	position: relative;
+	overflow: hidden;
 }
 #projects .part_2 .p_cards .p_image img{
 	border-radius: 6px 6px 0px 0px;
-	transition: all 0.2s linear;
+	transition: all 0.5s linear;
 }
 #projects .part_2 .p_cards .p_image img:hover{
-	transform: scale(1.1);
+	transform: scale(1.3);
 }
 #projects .part_2 .p_cards .info{
 	padding: 1rem 1rem 5rem 1rem;
