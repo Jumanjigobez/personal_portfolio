@@ -1,4 +1,4 @@
-# My Own Personal Poretfolio
+# My Own Personal Portfolio
 A simple responsive portfolio webpage coded using HTML, CSS and JavaScript only.
 Kindly Check it out :)
 
