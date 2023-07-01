@@ -197,7 +197,7 @@ const handleFilter = (elem,x) =>{
 			i.classList.remove("active")
 		}
 	});
-
+	project_container.innerHTML = '';
 	loading_screen.style.display = 'flex';
 	
 	fetch(url).then(res => res.json())
