@@ -160,7 +160,8 @@ window.addEventListener("scroll", function(){
 
 //Retrieve of Projects from local Data Json
 var url = "data.json",
-	project_container = document.querySelector("#projects .part_2");
+	project_container = document.querySelector("#projects .part_2 .container"),
+	loading_screen = document.querySelector("#projects .part_2 .loading_screen");
 
 fetch(url).then(res => res.json())
 .then(data => {
@@ -197,14 +198,17 @@ const handleFilter = (elem,x) =>{
 		}
 	});
 
+	loading_screen.style.display = 'flex';
+	
 	fetch(url).then(res => res.json())
 	.then(data => {
 		
 		project_container.innerHTML = '';
-		
+		loading_screen.style.display = 'flex';
 		let filter_array = data.filter( d => d.type == x);
 
 		filter_array.forEach((project)=>{
+			loading_screen.style.display = 'none';
 			project_container.innerHTML += `
 			<div class="p_cards">
 				<div class="p_image">
