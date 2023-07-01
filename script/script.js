@@ -42,7 +42,7 @@ loader = () =>{
 			}
 		}
 
-	},50);
+	},40);
 }
 loader();
 
@@ -107,11 +107,11 @@ openMenu = () =>{
 	menu_btn.innerHTML = `<p onclick="closeMenu();"><i class="fa fa-times"></i></p>`;
 
 	styleElem.innerHTML = `
-			@media (max-width: 600px){
+			@media (max-width: 375px){
 				#menu{
 					display: block;
 					width: 100%;
-					height: 100vh;
+					height: 100%;
 					position: fixed;
 					top: 10%;
 					left: 0;
@@ -128,11 +128,11 @@ closeMenu = () =>{
 	menu_btn.innerHTML = `<p onclick="openMenu();"><i class="fa fa-bars"></i></p>`;
 
 	styleElem.innerHTML = `
-			@media (max-width: 600px){
+			@media (max-width: 375px){
 				#menu{
 					display: none;
 					width: 100%;
-					height: 100vh;
+					height: 100%;
 					position: fixed;
 					top: 10%;
 					left: 0;
@@ -157,3 +157,69 @@ window.addEventListener("scroll", function(){
 		sidebar.style.display = "none";
 	}
 });
+
+//Retrieve of Projects from local Data Json
+var url = "data.json",
+	project_container = document.querySelector("#projects .part_2");
+
+fetch(url).then(res => res.json())
+.then(data => {
+	
+	data.forEach((project)=>{
+		project_container.innerHTML += `
+		<div class="p_cards">
+			<div class="p_image">
+				<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
+			</div>
+			<div class="info">
+				<h4>${project.title}</h4>
+				<p>${project.info}</p>
+				<a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+			</div>
+		</div>
+		`
+
+	})
+});
+
+// Handling filter options on my projects
+
+var filter_buttons = document.querySelectorAll(".filter_bar ul li");
+
+const handleFilter = (elem,x) =>{
+
+	//Making filter type be color green when clicked
+	filter_buttons.forEach((i)=>{
+		if(i==elem){
+			i.classList.add("active")
+		}else{
+			i.classList.remove("active")
+		}
+	});
+
+	fetch(url).then(res => res.json())
+	.then(data => {
+		
+		project_container.innerHTML = '';
+		
+		let filter_array = data.filter( d => d.type == x);
+
+		filter_array.forEach((project)=>{
+			project_container.innerHTML += `
+			<div class="p_cards">
+				<div class="p_image">
+					<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
+				</div>
+				<div class="info">
+					<h4>${project.title}</h4>
+					<p>${project.info}</p>
+					<a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+				</div>
+			</div>
+			`
+
+		})
+});
+
+}
+
