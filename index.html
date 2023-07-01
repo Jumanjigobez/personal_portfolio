@@ -3,28 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Juma Gobe Portfolio #Software Engineer" content="projects done by Juma Gobe, about, and contacts.">
+    <meta description="Juma Chaje Portfolio #Software Engineer" content="projects done by Juma Chaje, about, and contacts.">
     <title>Juma Chaje | Personal Portfolio Website</title>
     <link rel="shortcut icon" type="image/png" href="images/juma1.png">
-  
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    
-    
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-   <link rel="stylesheet" type="text/css" href="style/style.css">
-   
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <script defer src="data.json"></script>
   </head>
 
   <body>
-    <main>
+    
       <div class="preloader" id="preloader">
         <div class="counter" id="counter">0</div>
         <div class="text" id="text">Welcome To <span>Jumanji...</span></div>
       </div>
+
       <header id="header">
         <div class="logo">
           <h1>Juma<span>Chaje</span></h1>
@@ -45,9 +44,10 @@
         </div>
       </header>
 
+    <main>
       <section id="section_1">
         <div class="part_1">
-          <img src="images/homepic.png" width="100%" height="100%" alt="Juma Chaje Image">
+          <img src="images/homepic.png" alt="Juma Chaje Image">
         </div>
         <div class="part_2">
           <p>Hello, <span id="visitor"></span><br> My name is <br><b>Juma Chaje</b> <br>And I'm a: </p>
@@ -66,14 +66,14 @@
         </div>
         <div class="part_2">
           <div class="image_part">
-            <img src="images/juma1.1.jpg" width="100%" height="100%" alt="Juma Chaje Image 2">
+            <img src="images/juma1.1.jpg" alt="Juma Chaje Image 2">
           </div>
 
           <div class="info">
             <h3>I'm Juma & I'm a:</h3>
             <marquee>Software Engineer, Frontend Developer, Freelancer & Youtuber.</marquee>
             <p>I am normally nicknamed as <b>Jumanji</b> at home. I am very passionate in tech industry jobs especially in programming areas. I have got much needed skills and experiences that makes me believe to say that <q>I CAN DO IT</q>. I can do all my best from scratch to pursue my employer that I am actually the Best. I am ready to work <b>Remotely</b> and <b>In-Office</b>. Thank you in Advance for visiting my Portfolio Website. Eager waiting for your Order, <b>Mr/Mrs/Miss. <span id="visitor"></span>.</b></p>
-            <button class="btn">View Resume</button>
+            <a href="MyResume.pdf" target="_blank"><button class="btn">View Resume</button></a>
           </div>
         </div>
       </section>
@@ -100,13 +100,13 @@
           </div>
 
            <div class="box">
-            <h4>Android Development</h4>
-            <p>I am able to develop android mobile applications too using new programming techniques to make it much <b>Faster</b> and also host in Google Play Store.</p>
+            <h4>Mobile Development</h4>
+            <p>I am able to develop both android & ios native mobile applications using new programming techniques to make it much <b>Faster</b> and also hosting in their respective stores.</p>
           </div>
 
           <div class="box">
             <h4>System Development</h4>
-            <p>I can develop systems that are <b>Time-Saving</b> and <b>Simple</b> to use and work with it.</p>
+            <p>I can develop systems that are <b>Time-Saving</b> and <b>Simple</b> to use and work with.</p>
           </div>
 
           <div class="box">
@@ -219,72 +219,23 @@
           <h2>My Projects</h2>
         </div>
 
+        <div class="filter_bar">
+          <ul>
+            <li onclick="handleFilter(this,'landing_page')">Landing Pages</li>
+            <li onclick="handleFilter(this,'api')">API's</li>
+            <li onclick="handleFilter(this,'personal_project')">Personal Projects</li>
+            <li onclick="handleFilter(this,'react_project')">React Projects</li>
+            <li onclick="handleFilter(this,'client_project')">Client Projects</li>
+          </ul>
+        </div>
+
+        <div class="boxLoading">
+       
+        </div>
         <div class="part_2">
-          <div class="p_cards">
-            <div class="p_image">
-              <img src="images/bank.png" width="100%" height="100%" alt="">
-            </div>
-             <div class="info">
-              <h4>1. Bank Landing Page</h4>
-              <p>A responsive and eye-catching landing page of digital banking site. Developed using HTML, CSS and JavaScript for Mobile users.</p>
-              <a href="https://jumanjigobez.github.io/bank_landing_page/" target="_blank"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-            </div>
-          </div>
 
-        <div class="p_cards">
-            <div class="p_image">
-              <img src="images/studio.png" width="100%" height="100%" alt="">
-            </div>
-             <div class="info">
-              <h4>2. Studio Landing Page</h4>
-              <p>A responsive and eye-catching landing page of a vr studio. Developed using HTML, CSS and little JavaScript for Mobile navigation.</p>
-              <a href="https://jumanjigobez.github.io/studio_landing_page/" target="_blank"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-            </div>
-          </div>
-
-        <div class="p_cards">
-            <div class="p_image">
-              <img src="images/classiccalc.png" width="100%" height="100%" alt="">
-            </div>
-             <div class="info">
-              <h4>3. Classic Calculator</h4>
-              <p>A classic calculator project with three theme changer view. Mainly applied my more knowledge on JavaScript DOM usage. Hope you will enjoy it.</p>
-              <a href="https://jumanjigobez.github.io/classic_calculator/" target="_blank"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-            </div>
-          </div>
-
-        <div class="p_cards">
-            <div class="p_image">
-              <img src="images/countries.png" width="100%" height="100%" alt="">
-            </div>
-             <div class="info">
-              <h4>4. REST Countries API</h4>
-              <p>This is a site that shows details of the whole country in the world by fetching data from a REST API Dynamically. Developed using only HTML, CSS and JavaScript Fetch. Kindly check it out...</p>
-              <a href="https://jumanjigobez.github.io/restcountriesapi/" target="_blank"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-            </div>
-          </div>
-
-        <div class="p_cards">
-            <div class="p_image">
-              <img src="images/advice.png" width="100%" height="100%" alt="">
-            </div>
-            <div class="info">
-              <h4>5. Advice Generator App</h4>
-              <p>A web App that randomly generates advices by just clicking a button. It fetches the advice dynamically from an ADVICE API. Check it out and enjoy your free advices...</p>
-              <a href="https://jumanjigobez.github.io/advice_generator_app" target="_blank"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-            </div>
-          </div>
-
-        <div class="p_cards">
-            <div class="p_image">
-              <img src="images/portfolio.png" width="100%" height="100%" alt="">
-            </div>
-             <div class="info">
-              <h4>6. My Portfolio Website</h4>
-              <p>The site you are viewing right now. It is responsive and eye-catching, Only developed by using HTML, CSS and JavaScript. Hope am right :)</p>
-              <a href="https://www.jumanjigobez.github.io/personal_portfolio" target="_blank"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-            </div>
-          </div>
+           <!--- Projects will be dynamically shown from local json data--->
+        
         </div>
       </section>
 
@@ -361,8 +312,8 @@
 
         </div>
          <section id="section_7">
-         <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Nairobi Kiamaiko ongoza njia centre&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.embedmymap.com/">Embed My Map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:500px;}.gmap_iframe {height:500px!important;}</style></div> 
-      </section>
+          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Nairobi Kiamaiko ongoza njia centre&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.embedmymap.com/">Embed My Map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:500px;}.gmap_iframe {height:500px!important;}</style></div> 
+         </section>
       </section>
 
      <!---Sidebar items of social media icons--->
@@ -378,10 +329,11 @@
            <li><a href="https://wa.me/254799333217" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
          </ul>
         </div>
-    </div>
+      </div>
+
       <footer id="footer">
          <h2>Created with <i class="fa fa-heart"></i> by Jumanji</h2>
-         <p>Juma Chaje | 2022 All rights reserved</p>
+         <p>Juma Chaje | 2023 All rights reserved</p>
 
           <div id="top">
             <p><a href="#section_1"><i class="fa fa-arrow-up"></i></a></p>
