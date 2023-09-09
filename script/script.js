@@ -100,50 +100,15 @@ more_btn.addEventListener("click", function(){
 
 
 //for menu buttons
-var menu_btn = elem("menu_btn");
-var styleElem = document.head.appendChild(document.createElement("style"));
+var menu = document.querySelector("#menu");
 
-openMenu = () =>{
-	menu_btn.innerHTML = `<p onclick="closeMenu();"><i class="fa fa-times"></i></p>`;
+const toggleMenu = (menu_btn) =>{
+	menu.classList.toggle("active");
 
-	styleElem.innerHTML = `
-			@media (max-width: 375px){
-				#menu{
-					display: block;
-					width: 100%;
-					height: 100%;
-					position: fixed;
-					top: 10%;
-					left: 0;
-					transition: all 0.5s linear;
-					text-align: center;
-					background-color: #121212;
-					z-index: 20000;
-				}
-			}
-					`;
+	menu_btn.innerHTML = menu_btn.innerHTML == `<i class="fa fa-bars"></i>` ?
+		menu_btn.innerHTML = `<i class="fa fa-times"></i>` : menu_btn.innerHTML = `<i class="fa fa-bars"></i>`;
 }
 
-closeMenu = () =>{
-	menu_btn.innerHTML = `<p onclick="openMenu();"><i class="fa fa-bars"></i></p>`;
-
-	styleElem.innerHTML = `
-			@media (max-width: 375px){
-				#menu{
-					display: none;
-					width: 100%;
-					height: 100%;
-					position: fixed;
-					top: 10%;
-					left: 0;
-					transition: all 0.5s linear;
-					text-align: center;
-					background-color: #121212;
-					z-index: 20000;
-				}
-			}
-					`;
-}
 
 //for move to top button and the sidebar icons
 var top_btn = elem("top");
@@ -197,9 +162,10 @@ const handleFilter = (elem,x) =>{
 			i.classList.remove("active")
 		}
 	});
+
 	project_container.innerHTML = '';
 	loading_screen.style.display = 'flex';
-	
+
 	fetch(url).then(res => res.json())
 	.then(data => {
 		

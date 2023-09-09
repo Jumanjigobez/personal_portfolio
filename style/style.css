@@ -674,6 +674,8 @@ a{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 2rem;
+	height: 600px;
+    overflow-y: scroll;
 }
 #projects .part_2 .container .p_cards{
     width: 280px;
@@ -1153,15 +1155,19 @@ box-shadow:  15px 20px 15px  rgba(0,0,0,0.3);
 	}
 
 	#menu{
-		display: none;
+		display: block;
 		width: 100%;
 		height: 100%;
 		position: fixed;
 		top: 10%;
-		left: 0;
+		right: -400px;
 		text-align: center;
 		background-color: #121212;
 		z-index: 20000;
+		transition: all .4s linear;
+	}
+	#menu.active{
+		right: 0;
 	}
 	#menu li{
 		margin-top: 2rem;
@@ -1203,6 +1209,7 @@ box-shadow:  15px 20px 15px  rgba(0,0,0,0.3);
 	}
 	#about .part_2 .image_part{
 		width: 100%;
+		flex-basis: 0;
 	}
 	#about .part_2 .info{
 		margin-top: 20px;
@@ -1232,7 +1239,9 @@ box-shadow:  15px 20px 15px  rgba(0,0,0,0.3);
 	#skills .part_3{
 		width: 100%;
 	}
-
+	#projects .part_2 .container{
+		height: 1000px;
+	}
 	#projects .part_2 .container .p_cards{
 		width: 100%;
 	}
