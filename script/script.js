@@ -173,22 +173,42 @@ const handleFilter = (elem,x) =>{
 		loading_screen.style.display = 'flex';
 		let filter_array = data.filter( d => d.type == x);
 
-		filter_array.forEach((project)=>{
-			loading_screen.style.display = 'none';
-			project_container.innerHTML += `
-			<div class="p_cards">
-				<div class="p_image">
-					<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
+		if(filter_array.length > 0){
+			filter_array.forEach((project)=>{
+				loading_screen.style.display = 'none';
+				project_container.innerHTML += `
+				<div class="p_cards">
+					<div class="p_image">
+						<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
+					</div>
+					<div class="info">
+						<h4>${project.title}</h4>
+						<p>${project.info}</p>
+						<a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+					</div>
 				</div>
-				<div class="info">
-					<h4>${project.title}</h4>
-					<p>${project.info}</p>
-					<a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+				`
+	
+			})
+		}else{
+			data.forEach((project)=>{
+				loading_screen.style.display = 'none';
+				project_container.innerHTML += `
+				<div class="p_cards">
+					<div class="p_image">
+						<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
+					</div>
+					<div class="info">
+						<h4>${project.title}</h4>
+						<p>${project.info}</p>
+						<a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+					</div>
 				</div>
-			</div>
-			`
-
-		})
+				`
+	
+			})
+		}
+		
 });
 
 }

@@ -51,7 +51,7 @@
         "id": 7,
         "screenshot": "https://user-images.githubusercontent.com/73429193/203296203-d99c9234-cfca-4d5e-9813-3c28e06fb348.PNG",
         "title": "Millenium Booklets",
-        "info": "A Responsive, user-friendly site for a client where He provides Past Paper Booklets for students at a fee shown on each booklets. Dev by only using HTML, CSS and Javascript. Check it out...",
+        "info": "A Simple, Responsive, user-friendly site for a client where He provides Past Paper Booklets for students at a fee shown on each booklets. Dev by only using HTML, CSS and Javascript. Check it out...",
         "link": "https://jumanjigobez.github.io/milleniumbooklets/",
         "type": "client_project"
     },
@@ -89,7 +89,7 @@
     },
     {
         "id": 12,
-        "screenshot": "https://user-images.githubusercontent.com/73429193/246617813-414ecfc3-6ab6-4986-8e39-9715435fa7fa.png",
+        "screenshot": "images/moinfo.png",
         "title": "MoInfo Web App",
         "info": "A responsive, user-friendly movie search web application. Get quick info on any movie name you know or not know with just click of a button. Dev using only basics HTML, CSS and Js. Try it out...",
         "link": "https://jumanjigobez.github.io/MoInfo/",
@@ -179,34 +179,19 @@
         "id": 23,
         "screenshot": "images/delight.jpg",
         "title": "Delightsome Community Initiative",
-        "info": "A Non-Governmental, community based organization that works with children and youth on the city streets. Giving special attention to street families and try to tackle aspects in the community that have pushed them to the streets.",
+        "info": "A Community Based Organization that gives special attention to street families. Dev using HTML, CSS & Js",
         "link": "https://www.delightsome.org",
         "type": "client_project"
     },
     {
         "id": 24,
-        "screenshot": "images/commii.jpg",
-        "title": "Community Implementing Initiative",
-        "info": "A community based organization designed to give hope and restore dignity to the girl child and most vulnerable children in the community.",
-        "link": "https://www.commii.co.ke",
+        "screenshot": "images/fencing.png",
+        "title": "Kenya Fencing Federation",
+        "info": "The Official Fencing Federation in Kenya. Highly responsive and eye-catching theme. Dev Using HTML, CSS & Js. Check it out...",
+        "link": "https://www.fencing.co.ke",
         "type": "client_project"
     },
-    {
-        "id": 25,
-        "screenshot": "images/darvidoh.jpg",
-        "title": "DJ Darvidoh",
-        "info": "A Dynamic Entertainment Website for Dj Darvidoh. Made a dashboard page where He can upload all of his mixes and merchandizes. Dev using PHP, MySQL & CSS. Check it out and listen to the vibes...",
-        "link": "https://www.djdarvidoh.com",
-        "type": "client_project"
-    },
-    {
-        "id": 26,
-        "screenshot": "images/maarifa.jpg",
-        "title": "Maarifa International Trust",
-        "info": "An entirely charitable educational organization that aims to help the students not only nationally but globally with educational resources to help them in their day to day revision and in preparation of their exams. Dev using WordPress. Try it out...",
-        "link": "https://www.maarifainternationaltrust.com",
-        "type": "client_project"
-    },
+   
    
     {
         "id": 27,

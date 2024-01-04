@@ -18,7 +18,8 @@ html{
     
 }
 ::-webkit-scrollbar {
-    width: 8px;
+	width: 8px;
+	height: 8px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -583,19 +584,30 @@ a{
 	
 }
 #projects .filter_bar{
+	position: relative;
 	margin-top: 2rem;
 	background: #222;
 	border-radius: 12px;
 	padding: 0.8rem 1rem;
 }
+.filter_bar::before{
+	content: "Filter: ";
+    font-size: 2rem;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    top: 12%;
+    left: 2%;
+    color: #333;
+}
 .filter_bar ul{
 	display: flex;
-	grid-gap: 3rem;
 	align-items: center;
-	justify-content: center;
+	justify-content: end;
 }
 .filter_bar ul li{
 	list-style-type: none;
+	padding: 0.5rem 1rem;
 	font-weight: 400;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
@@ -675,10 +687,11 @@ a{
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-gap: 2rem;
 	height: 600px;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 #projects .part_2 .container .p_cards{
-    width: 280px;
+	width: 250px;
+	height: 500px;
 	background: #222;
 	color: var(--text-white);
     text-align: center;
@@ -686,12 +699,15 @@ a{
     cursor: pointer;
     transition:all linear 0.5s;
 }
+#projects .part_2 .container .p_cards .info p{
+	text-align: left;
+}
 #projects .part_2 .container .p_cards:hover{
      box-shadow: var(--box-shadow);
 }
 #projects .part_2 .container .p_cards .p_image{
     background: rgba(255,255,255,0.6);
-	width: 280px;
+	width: 100%;
 	height: 200px;
 	border-radius: 6px 6px 0px 0px;
 	position: relative;
@@ -810,7 +826,7 @@ a{
   margin-top: 15px;
 }
 
-.input-data{
+/* .input-data{
   width: 100%;
   background: #222;
   position: relative;
@@ -839,7 +855,7 @@ a{
   outline: none;
 }
 .input-data input:focus ~ label,
-.input-data input:valid ~ label /*textarea:focus ~ label, textarea:valid ~ label*/{
+.input-data input:valid ~ label{
   transform: translateY(-20px);
   color: limegreen;
 }
@@ -905,8 +921,27 @@ textarea:focus ~ label, textarea:valid ~ label{
 .input-data .btn:hover i{
   position: relative;
   animation: right 1s infinite;
-}
+} */
 
+.c_box{
+	margin-top: 2rem;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.c_box .icon{
+	width: 70px;
+}
+.icon img{
+	width: 100%;
+}
+.icon:nth-child(2){
+	width: 40px;
+}
+.icon:nth-child(3) img{
+	width: 80%;
+}
 #section_7{
     margin-top: 25px;
 
@@ -1202,7 +1237,7 @@ box-shadow:  15px 20px 15px  rgba(0,0,0,0.3);
 
 	#about{
 		margin-top: 10rem;
-		padding: 5rem 2rem;
+		padding: 5rem 2.6rem;
 	}
 	#about .part_2,#skills .part_2,#contact .part_2{
 		flex-direction: column;
@@ -1217,7 +1252,7 @@ box-shadow:  15px 20px 15px  rgba(0,0,0,0.3);
 	}
 
 	#services,#skills,#projects,#contact{
-		padding: 5rem 2rem;
+		padding: 5rem 2.6rem;
 		width: 100%;
 	}
 
@@ -1250,9 +1285,16 @@ box-shadow:  15px 20px 15px  rgba(0,0,0,0.3);
 	}
 	.filter_bar ul {
 		flex-direction: column;
-		grid-gap: 2rem;
+		grid-gap: 1rem;
 	}
-
+	.filter_bar::before {
+		width: 30%;
+		top: 0;
+	}
+	.filter_bar ul li{
+		width: 100%;
+		text-align: center;
+	}
 	#contact .part_2 .info{
 		width: 100%;
 	}
@@ -1263,7 +1305,8 @@ box-shadow:  15px 20px 15px  rgba(0,0,0,0.3);
 		left: -0.6rem;
 	}
 	#top{
-		right: 20px;
+		right: 0.2rem;
+    	padding: 12px;
 	}
 	#footer{
 		padding: 1rem 2rem;
