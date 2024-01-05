@@ -1173,7 +1173,10 @@ box-shadow:  15px 20px 15px  rgba(0,0,0,0.3);
 	}
 	#header.sticky{
 		padding: 1rem 2rem;
-	    width: 100%;
+	    	width: 100%;
+	}
+	#header.sticky .menu li a:hover{
+  		color: var(--theme-color-light);
 	}
 	#header .logo{
 		flex-basis: 300px;
