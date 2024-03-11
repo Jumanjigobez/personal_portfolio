@@ -1237,8 +1237,11 @@ textarea:focus ~ label, textarea:valid ~ label{
   #about .part_2,
   #skills .part_2,
   #contact .part_2 {
-    width: 100%;
     flex-direction: column;
+  }
+  #skills .part_2,
+  #projects .part_2 {
+    width: 100%;
   }
   #about .part_2 .image_part {
     width: 100%;
