@@ -15,4 +15,4 @@ Please Also Follow me in:
 - Instagram - [@jumanjicasilas](https://www.instagram.com/jumanjicasilas)
 - Youtube - [@Jumanji_Dev](https://www.youtube.com/channel/UCw3RDC7Nn5lzU15-HdOC6WA)
 
-Thanks in Advance for being my follower and viewing this :)
+Thanks in Advance for being my follower and giving a Star :)
