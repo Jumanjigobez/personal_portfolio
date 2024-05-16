@@ -208,5 +208,14 @@
     "info": "A comprehensive web-based personal management system that combines essential features to simplify your life. Still in development, Dev using ReactJs and PHP for backend.",
     "link": "https://homesys.000webhostapp.com/",
     "type": "react_project"
+  },
+
+  {
+    "id": 29,
+    "screenshot": "images/blossoms.png",
+    "title": "Blossoms of Ghetto",
+    "info": "Custom Designed and Developed, Few Animation Integrated using only HTML5, CSS3 and Vanilla JavaScript. Check Them Out...",
+    "link": "https://www.blossomsofghetto.org",
+    "type": "client_project"
   }
 ]
