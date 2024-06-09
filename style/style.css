@@ -713,10 +713,13 @@ a {
   transform: scale(1.2);
 }
 #projects .part_2 .container .p_cards .info {
-  padding: 1rem 1rem 5rem 1rem;
-  width: 100%;
-  height: 100%;
-  position: relative;
+ width: 100%;
+    padding: 1rem;
+    height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 #projects .part_2 .container .p_cards .info h4 {
   font-size: 18px;
