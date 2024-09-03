@@ -596,7 +596,7 @@ a {
 .filter_bar ul {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 .filter_bar ul li {
   list-style-type: none;
@@ -713,13 +713,13 @@ a {
   transform: scale(1.2);
 }
 #projects .part_2 .container .p_cards .info {
- width: 100%;
-    padding: 1rem;
-    height: 300px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #projects .part_2 .container .p_cards .info h4 {
   font-size: 18px;

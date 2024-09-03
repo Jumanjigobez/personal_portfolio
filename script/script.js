@@ -1,5 +1,5 @@
 //A Function to get elements id
-elem = x => {
+elem = (x) => {
   return document.getElementById(x);
 };
 
@@ -9,7 +9,7 @@ var counter = elem("counter");
 var text = elem("text");
 
 loader = () => {
-  let count = setInterval(function() {
+  let count = setInterval(function () {
     var c = parseInt($(".counter").text());
     $(".counter").text((++c).toString());
 
@@ -47,7 +47,7 @@ loader();
 //Sticky menu part
 var header = elem("header");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   if (this.scrollY > 20) {
     header.classList.add("sticky");
   } else {
@@ -61,18 +61,18 @@ var typed = new Typed(".typing", {
     "Software Engineer",
     "Frontend Developer",
     "Freelancer",
-    "Youtuber"
+    "Youtuber",
   ],
 
   typeSpeed: 100,
   backSpeed: 60,
-  loop: true
+  loop: true,
 });
 
 //for skills animation
 var skill = document.querySelectorAll("#skill");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   if (this.scrollY >= 1800) {
     for (var i = 0; i < skill.length; i++) {
       skill[i].style.display = "block";
@@ -88,14 +88,14 @@ window.addEventListener("scroll", function() {
 var more_btn = elem("more_btn");
 var more_card = elem("more_card");
 
-more_btn.addEventListener("click", function() {
+more_btn.addEventListener("click", function () {
   more_card.style.display = "block";
 });
 
 //for menu buttons
 var menu = document.querySelector("#menu");
 
-const toggleMenu = menu_btn => {
+const toggleMenu = (menu_btn) => {
   menu.classList.toggle("active");
 
   menu_btn.innerHTML =
@@ -107,7 +107,7 @@ const toggleMenu = menu_btn => {
 //for move to top button and the sidebar icons
 var top_btn = elem("top");
 var sidebar = elem("sidebar");
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
   if (this.scrollY > 20) {
     top_btn.style.display = "block";
     sidebar.style.display = "block";
@@ -123,21 +123,26 @@ var url = "data.json",
   loading_screen = document.querySelector("#projects .part_2 .loading_screen");
 
 fetch(url)
-  .then(res => res.json())
-  .then(data => {
+  .then((res) => res.json())
+  .then((data) => {
     let sorted_array = data.sort((a, b) => b.id - a.id); //Sorting in Desc Order for Latest projects
     console.log(sorted_array);
-    sorted_array.forEach(project => {
+    sorted_array.forEach((project) => {
       project_container.innerHTML += `
 		<div class="p_cards">
 			<div class="p_image">
 				<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
 			</div>
-			<div class="info">
-				<h4>${project.title}</h4>
-				<p>${project.info}</p>
-				<a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-			</div>
+      <div class="info">
+        <div class="text_part">
+          <h4>${project.title}</h4>
+          <p>${project.info}</p>
+        </div>
+      
+        <div class="btn_part">
+          <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+        </div>
+    </div>
 		</div>
 		`;
     });
@@ -149,7 +154,7 @@ var filter_buttons = document.querySelectorAll(".filter_bar ul li");
 
 const handleFilter = (elem, x) => {
   //Making filter type be color green when clicked
-  filter_buttons.forEach(i => {
+  filter_buttons.forEach((i) => {
     if (i == elem) {
       i.classList.add("active");
     } else {
@@ -161,43 +166,55 @@ const handleFilter = (elem, x) => {
   loading_screen.style.display = "flex";
 
   fetch(url)
-    .then(res => res.json())
-    .then(data => {
+    .then((res) => res.json())
+    .then((data) => {
       project_container.innerHTML = "";
       loading_screen.style.display = "flex";
-      let filter_array = data.filter(d => d.type == x);
+      let filter_array = data.filter((d) => d.type == x);
 
       let sorted_array = data.sort((a, b) => b.id - a.id); //Sorting in Desc Order for Latest projects
 
       if (filter_array.length > 0) {
-        filter_array.forEach(project => {
+        let filtered_sorted = filter_array.sort((a, b) => b.id - a.id);
+        filtered_sorted.forEach((project) => {
           loading_screen.style.display = "none";
           project_container.innerHTML += `
 				<div class="p_cards">
 					<div class="p_image">
 						<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
 					</div>
-					<div class="info">
-						<h4>${project.title}</h4>
-						<p>${project.info}</p>
-						<a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-					</div>
+          <div class="info">
+            <div class="text_part">
+              <h4>${project.title}</h4>
+              <p>${project.info}</p>
+            </div>
+						
+            <div class="btn_part">
+              <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+            </div>
+          </div>
+         
 				</div>
 				`;
         });
       } else {
-        sorted_array.forEach(project => {
+        sorted_array.forEach((project) => {
           loading_screen.style.display = "none";
           project_container.innerHTML += `
 				<div class="p_cards">
 					<div class="p_image">
 						<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
 					</div>
-					<div class="info">
-						<h4>${project.title}</h4>
-						<p>${project.info}</p>
-						<a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
-					</div>
+          <div class="info">
+            <div class="text_part">
+              <h4>${project.title}</h4>
+              <p>${project.info}</p>
+            </div>
+          
+            <div class="btn_part">
+              <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+            </div>
+        </div>
 				</div>
 				`;
         });

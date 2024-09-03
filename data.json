@@ -3,7 +3,7 @@
     "id": 1,
     "screenshot": "https://user-images.githubusercontent.com/73429193/185882338-4cb4800c-e646-41c2-8385-54ba0ca171a6.jpg",
     "title": "Advice Generator App",
-    "info": "A web App that randomly generates advices by just clicking a button. It fetches the advice dynamically from an ADVICE API. Check it out and enjoy your free advices...",
+    "info": "A web app that generates random advice at the click of a button, fetching data dynamically from an ADVICE API. Check it out and enjoy a wealth of free advice...",
     "link": "https://jumanjigobez.github.io/advice_generator_app/",
     "type": "api"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "screenshot": "https://user-images.githubusercontent.com/73429193/187041507-fbcc4288-1266-4888-9bdc-a3d19a2145fe.jpg",
     "title": "Banking Landing Page",
-    "info": "A responsive and eye-catching landing page of digital banking site. Developed using HTML, CSS and JavaScript for Mobile viewers.",
+    "info": "A responsive and visually appealing landing page for a digital banking site. Developed using HTML, CSS, and JavaScript, optimized for mobile viewers.",
     "link": "https://jumanjigobez.github.io/bank_landing_page/",
     "type": "landing_page"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "screenshot": "https://user-images.githubusercontent.com/73429193/186490286-c556cfa6-79b0-407d-a081-31916b9088b1.jpg",
     "title": "Classic Calculator",
-    "info": "A classic calculator project with three theme changer view. Mainly applied my more knowledge on JavaScript DOM usage. Hope you will enjoy it.",
+    "info": "A classic calculator with three theme options. Showcases advanced JavaScript DOM manipulation. Enjoy a stylish and functional calculator experience.",
     "link": "https://jumanjigobez.github.io/classic_calculator/",
     "type": "personal_project"
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "screenshot": "https://user-images.githubusercontent.com/73429193/185793669-9e127407-8a02-4e1d-8bf2-009a47ca430f.PNG",
     "title": "Countries Data App",
-    "info": "This is a site that shows details of the whole country in the world by fetching data from a REST Country API Dynamically. Developed using only HTML, CSS and JavaScript Fetch method. Check info about your country...",
+    "info": "A site that displays details about countries around the world by fetching data from a REST Country API dynamically. Developed using HTML, CSS, and JavaScript Fetch method. Learn more about any country...",
     "link": "https://jumanjigobez.github.io/restcountriesapi/",
     "type": "api"
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "screenshot": "https://user-images.githubusercontent.com/73429193/202137879-2de1706c-1bbc-46e7-a71d-7836055ff892.jpg",
     "title": "E-commerce Product Page",
-    "info": "A responsive, eye-catching e-commerce product page view with an add to cart functionality and product image slider dev by using basic HTML, CSS & Js.",
+    "info": "A responsive and attractive e-commerce product page featuring an add-to-cart function and product image slider. Developed using basic HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/E-commerce-product-page/",
     "type": "personal_project"
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "screenshot": "https://user-images.githubusercontent.com/73429193/192140872-04a2411b-334a-49c8-8bb7-3307f250e0f5.jpg",
     "title": "Form Validation",
-    "info": "A Sign Up form with validations for input fields like email validity. Dev by use of only HTML, CSS and Javascript for validation.",
+    "info": "A sign-up form with input field validations, including email validation. Developed using HTML, CSS, and JavaScript for form validation.",
     "link": "https://jumanjigobez.github.io/Form_Validation/",
     "type": "personal_project"
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "screenshot": "https://user-images.githubusercontent.com/73429193/203296203-d99c9234-cfca-4d5e-9813-3c28e06fb348.PNG",
     "title": "Millenium Booklets",
-    "info": "A Simple, Responsive, user-friendly site for a client where He provides Past Paper Booklets for students at a fee shown on each booklets. Dev by only using HTML, CSS and Javascript. Check it out...",
+    "info": "A simple and responsive site for a client that provides past paper booklets for students, displaying fees for each booklet. Developed using only HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/milleniumbooklets/",
     "type": "client_project"
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "screenshot": "images/portfolio.png",
     "title": "Personal Portfolio",
-    "info": "The site you are viewing right now. It is responsive and eye-catching, Only developed by using HTML, CSS and JavaScript. Hope am right :)",
+    "info": "The site you are currently viewing. A responsive and visually appealing portfolio, developed using HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/personal_portfolio/",
     "type": "personal_project"
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "screenshot": "https://user-images.githubusercontent.com/73429193/188189017-23ddc1cc-ae40-4cb7-8c4e-d2e58a9aff19.jpg",
     "title": "Rating App",
-    "info": "A user friendly web app that collects rate from Anonymous visitors with just two clicks. Dev by using HTML, CSS and Js. Rate me...",
+    "info": "A user-friendly web app that collects ratings from anonymous visitors with just two clicks. Developed using HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/rating_app/",
     "type": "personal_project"
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "screenshot": "https://user-images.githubusercontent.com/73429193/186212730-5c9f1c41-ab61-4b00-8aa3-104f2ee58092.jpg",
     "title": "Gamers Landing Page",
-    "info": "A responsive and eye-catching landing page of a vr studio. Developed using HTML, CSS and little JavaScript for Mobile navigation.",
+    "info": "A responsive and visually engaging landing page for a VR studio. Developed using HTML, CSS, and a touch of JavaScript for mobile navigation.",
     "link": "https://jumanjigobez.github.io/studio_landing_page/",
     "type": "landing_page"
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "screenshot": "https://user-images.githubusercontent.com/73429193/188280926-2cd1e122-88d4-40cf-a655-01052c79bc6a.jpg",
     "title": "Designers Landing Page",
-    "info": "A great responsive and attractive landing page, Best for Graphic designers and Photographers. Dev with only HTML, CSS and Js",
+    "info": "A responsive and attractive landing page ideal for graphic designers and photographers. Developed using only HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/sunnyside_landing_page/",
     "type": "landing_page"
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "screenshot": "images/moinfo.png",
     "title": "MoInfo Web App",
-    "info": "A responsive, user-friendly movie search web application. Get quick info on any movie name you know or not know with just click of a button. Dev using only basics HTML, CSS and Js. Try it out...",
+    "info": "A responsive, user-friendly movie search application. Get quick information on any movie with just a click. Developed using basic HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/MoInfo/",
     "type": "api"
   },
@@ -99,15 +99,15 @@
     "id": 13,
     "screenshot": "https://user-images.githubusercontent.com/73429193/241419837-cf0484bb-0387-46f9-a309-bf54e4ac9033.jpg",
     "title": "ToDo App",
-    "info": "A perfect responsive ToDo application that can enable you to track your day to be more productive.It has filter options to check completed and active tasks and a theme changer. Dev using React-Js. Try it out...",
+    "info": "A highly responsive ToDo application that helps you track your tasks and improve productivity. Includes filter options and a theme changer. Developed using React.js.",
     "link": "https://jumanjigobez.github.io/ToDo_App/",
-    "type": "react_project"
+    "type": "personal_project"
   },
   {
     "id": 14,
     "screenshot": "https://user-images.githubusercontent.com/73429193/226161625-115ad66a-3504-4265-b0b0-2dc886b219e1.jpg",
     "title": "Bookmark Landing Page",
-    "info": "A best responsive landing page with FAQ's section. Best for browser extensions landing pages. Dev using only HTML, CSS and Js",
+    "info": "A highly responsive landing page with an FAQ section. Ideal for browser extension landing pages. Developed using HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/bookmark/",
     "type": "landing_page"
   },
@@ -115,7 +115,7 @@
     "id": 15,
     "screenshot": "https://user-images.githubusercontent.com/73429193/247979452-1f666ac8-7e76-4ec0-bf4e-38867cd8bbcd.jpg",
     "title": "Insurance Landing Page",
-    "info": "A best responsive and well-layered landing page for Insurance Agencies. Dev using basics HTML and CSS",
+    "info": "A responsive and well-structured landing page designed for insurance agencies. Developed using basic HTML and CSS.",
     "link": "https://jumanjigobez.github.io/Insure/",
     "type": "landing_page"
   },
@@ -123,7 +123,7 @@
     "id": 16,
     "screenshot": "https://user-images.githubusercontent.com/73429193/204136295-1ce9e68f-de9a-4674-a853-9878505343f6.jpg",
     "title": "Jobs Listing Site",
-    "info": "A responsive jobs listing site with jobs filtering for programmers. Use of a Local data Json file. Dev using only HTML, CSS & Js.",
+    "info": "A responsive job listing site with filtering options for programmers. Utilizes a local JSON data file. Developed using HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/Job_Listings/",
     "type": "personal_project"
   },
@@ -131,7 +131,7 @@
     "id": 17,
     "screenshot": "https://user-images.githubusercontent.com/73429193/190891501-73c21866-7e23-4aa0-a94a-18b59d53d315.jpg",
     "title": "Shortly Web App",
-    "info": "A user-friendly web app that allows you to shorten your urls link with just click of a button and gives you free option to copy your shortened link. Try it out...",
+    "info": "A user-friendly web application that allows you to shorten URLs with a single click and provides an easy option to copy the shortened link. Give it a try...",
     "link": "https://jumanjigobez.github.io/shortly/",
     "type": "api"
   },
@@ -139,7 +139,7 @@
     "id": 18,
     "screenshot": "https://user-images.githubusercontent.com/73429193/216553341-df2b10c6-e659-4bde-87e8-7225c297ad6f.jpg",
     "title": "Apps Landing Page",
-    "info": "A responsive landing page best for applications launch or usage guide. Dev using only basics HTML, CSS & Js",
+    "info": "A responsive landing page designed for application launches or usage guides, built with basic HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/Clipboard_landingpage/",
     "type": "landing_page"
   },
@@ -147,15 +147,15 @@
     "id": 19,
     "screenshot": "https://user-images.githubusercontent.com/73429193/189476470-edc47d58-f425-44df-8750-fc6a62094674.jpg",
     "title": "Store Landing Page",
-    "info": "An eye-catching and responsive landing page best for stores adverts. Dev using only HTML, CSS & Js",
+    "info": "An eye-catching and responsive landing page ideal for store advertisements, developed using only HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/room_store/",
     "type": "landing_page"
   },
   {
     "id": 20,
     "screenshot": "https://user-images.githubusercontent.com/73429193/208444643-b34d0173-4391-4063-a502-22814dca5fc5.jpg",
-    "title": "Ip Address Tracker App",
-    "info": "A simple tracking web application, which can be used to search details on an IP ADDRESS & DOMAIN NAME faster and get location in real-time. Dev using only HTML, CSS & Js",
+    "title": "IP Address Tracker App",
+    "info": "A straightforward web application for tracking IP addresses and domain names, providing real-time location information. Developed using HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/tracker/",
     "type": "api"
   },
@@ -163,7 +163,7 @@
     "id": 21,
     "screenshot": "https://user-images.githubusercontent.com/73429193/203498681-20eac707-d2a6-4f47-8771-434e3f87daa3.jpg",
     "title": "Price Cards",
-    "info": "A responsive and user-friendly price cards with a toggle button for Annual or Monthly pricings. Dev using only HTML & CSS.",
+    "info": "A responsive and user-friendly price card component featuring a toggle button for switching between annual and monthly pricing. Developed with HTML and CSS.",
     "link": "https://jumanjigobez.github.io/Price_cards/",
     "type": "personal_project"
   },
@@ -171,7 +171,7 @@
     "id": 22,
     "screenshot": "https://user-images.githubusercontent.com/73429193/193446910-dedf4119-4179-48e4-879c-880ed3ea18b9.jpg",
     "title": "Tip Calculator App",
-    "info": "A perfect, responsive and accurate Tip Calculator for helping you make a tip at some percentages and also amongst your peers. Dev using only HTML, CSS & Js. Try it out...",
+    "info": "A responsive and accurate tip calculator that helps you calculate tips at various percentages among your peers. Developed with HTML, CSS, and JavaScript. Try it out...",
     "link": "https://jumanjigobez.github.io/tip_calculator/",
     "type": "personal_project"
   },
@@ -179,7 +179,7 @@
     "id": 23,
     "screenshot": "images/delight.jpg",
     "title": "Delightsome Community Initiative",
-    "info": "A Community Based Organization that gives special attention to street families. Dev using HTML, CSS & Js",
+    "info": "A community-based organization dedicated to supporting street families. Developed using HTML, CSS, and JavaScript.",
     "link": "https://www.delightsome.org",
     "type": "client_project"
   },
@@ -187,44 +187,122 @@
     "id": 24,
     "screenshot": "images/fencing.png",
     "title": "Kenya Fencing Federation",
-    "info": "The Official Fencing Federation in Kenya. Highly responsive and eye-catching theme. Dev Using HTML, CSS & Js. Check it out...",
+    "info": "The official website of the Kenya Fencing Federation. Featuring a highly responsive and visually appealing theme, developed with HTML, CSS, and JavaScript. Check it out...",
     "link": "https://www.fencing.co.ke",
     "type": "client_project"
   },
-
   {
     "id": 27,
     "screenshot": "https://user-images.githubusercontent.com/73429193/263548805-239958af-e292-4132-86fe-a1660cd6da3c.jpg",
-    "title": "Multi Step Form",
-    "info": "My Second React project. A Highly Responsive Multi_Step Subscription Form Application, simple and easy to use. Dev using React + Redux",
+    "title": "Multi-Step Form",
+    "info": "A highly responsive multi-step subscription form application that's simple and user-friendly. Developed with React and Redux.",
     "link": "https://jumanjigobez.github.io/Multi_Step_Form/",
-    "type": "react_project"
+    "type": "personal_project"
   },
-
   {
     "id": 28,
-    "screenshot": "https://private-user-images.githubusercontent.com/73429193/359835034-ce501724-1b67-41ed-a78b-662728e1bdbc.PNG?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjQzMjI4OTgsIm5iZiI6MTcyNDMyMjU5OCwicGF0aCI6Ii83MzQyOTE5My8zNTk4MzUwMzQtY2U1MDE3MjQtMWI2Ny00MWVkLWE3OGItNjYyNzI4ZTFiZGJjLlBORz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MjIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODIyVDEwMjk1OFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPThhYWQzMzdhYjYxYjkzZTNhZDhiYmEwYWU4M2M0NmM0MTBiYzNmYjRkZmE0ZTc3ZTI5NGQzYzk5NWY1YjU1MGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ra7fEBqpanT17vMD_lfxtczfnlJpMf10VX2n4g2SXao",
+    "screenshot": "https://github.com/user-attachments/assets/0854ab9e-7b3c-4332-8096-7739bce68ea8",
     "title": "HomeSys",
-    "info": "A comprehensive web-based personal management system that combines essential features to simplify your life. Still in development, Dev using ReactJs and PHP for backend.",
-    "link": "https://homesys.000webhostapp.com/",
-    "type": "react_project"
+    "info": "A comprehensive web-based personal management system designed to simplify your life. Still in development, using ReactJS for the front end and PHP for the backend.",
+    "link": "https://homesys.infinityfreeapp.com/",
+    "type": "personal_project"
   },
-
   {
     "id": 29,
     "screenshot": "images/blossoms.png",
     "title": "Blossoms of Ghetto",
-    "info": "Custom Designed and Developed, Few Animation Integrated using only HTML5, CSS3 and Vanilla JavaScript. Check Them Out...",
+    "info": "A custom-designed website with a few animations, built using HTML5, CSS3, and vanilla JavaScript. Explore it now...",
     "link": "https://www.blossomsofghetto.org",
     "type": "client_project"
   },
-
   {
     "id": 30,
     "screenshot": "images/reality.png",
     "title": "Reality Tested Youth Programme",
-    "info": "A Community Based site. Highly Responsive & Interactive. Dev using only HTML5, CSS3 and Js with custom Json file. Check Them Out...",
+    "info": "A community-based site that is highly responsive and interactive, developed using HTML5, CSS3, JavaScript, and a custom JSON file. Check it out...",
     "link": "https://www.realitytestedyouth.org",
     "type": "client_project"
+  },
+  {
+    "id": 31,
+    "screenshot": "https://github.com/user-attachments/assets/001e7d6e-cb2d-4bb5-9ea4-39dcdb363eee",
+    "title": "News Homepage",
+    "info": "A highly responsive news website homepage that makes good use of CSS Grid. Explore it now...",
+    "link": "https://jumanjigobez.github.io/News_Homepage",
+    "type": "personal_project"
+  },
+
+  {
+    "id": 33,
+    "screenshot": "https://github.com/user-attachments/assets/47ffe4d1-d29c-496c-84bf-943c3b914fa7",
+    "title": "React Contact Form",
+    "info": "A well-designed React JS contact form featuring Formik and React-Toastify. Test it out...",
+    "link": "https://jumanjigobez.github.io/React_Form",
+    "type": "personal_project"
+  },
+  {
+    "id": 34,
+    "screenshot": "https://github.com/Jumanjigobez/interactive_pricing/assets/73429193/b6517d7e-a0e4-4b0d-a637-0f421f113b85",
+    "title": "Interactive Pricing Card",
+    "info": "An interactive pricing component developed using vanilla JavaScript.",
+    "link": "https://jumanjigobez.github.io/interactive_pricing/",
+    "type": "personal_project"
+  },
+  {
+    "id": 35,
+    "screenshot": "https://github.com/Jumanjigobez/snap_intro_section/assets/73429193/3d220466-7d3a-43b9-83d7-df3fe3024c8d",
+    "title": "Snap Landing Page",
+    "info": "A responsive snap intro section landing page developed using HTML and CSS, featuring dropdown submenus.",
+    "link": "https://jumanjigobez.github.io/snap_intro_section/",
+    "type": "landing_page"
+  },
+
+  {
+    "id": 37,
+    "screenshot": "https://github.com/Jumanjigobez/social_dashboard/assets/73429193/93e41155-0fc6-45bb-b9ee-182f4270f4e8",
+    "title": "Social Dashboard",
+    "info": "An attractive and highly responsive social media dashboard with a theme switcher, developed with basic HTML, CSS, and a bit of JavaScript.",
+    "link": "https://jumanjigobez.github.io/social_dashboard/",
+    "type": "personal_project"
+  },
+  {
+    "id": 38,
+    "screenshot": "https://github.com/Jumanjigobez/manage/assets/73429193/f6acd5c8-1e12-4cf9-a723-ab632f44273d",
+    "title": "Manage Landing Page",
+    "info": "A highly responsive landing page with HTML, CSS, and JavaScript, featuring a simple carousel slider for testimonials and a subscription email validator.",
+    "link": "https://jumanjigobez.github.io/manage",
+    "type": "landing_page"
+  },
+  {
+    "id": 39,
+    "screenshot": "https://github.com/Jumanjigobez/FAQ/assets/73429193/13ae5965-f158-44b9-b719-e5b7c5ae65a1",
+    "title": "FAQ",
+    "info": "A simple yet highly responsive FAQ card built using basic HTML, CSS, and a bit of JavaScript.",
+    "link": "https://jumanjigobez.github.io/FAQ",
+    "type": "personal_project"
+  },
+  {
+    "id": 40,
+    "screenshot": "https://github.com/Jumanjigobez/Base_Apparel/assets/73429193/46029e28-ab67-4b61-ab58-864d14215ff9",
+    "title": "Coming Soon Page",
+    "info": "A highly responsive Coming Soon webpage featuring email collection functionality, developed with basic HTML, CSS, and JavaScript.",
+    "link": "https://jumanjigobez.github.io/Base_Apparel",
+    "type": "landing_page"
+  },
+  {
+    "id": 41,
+    "screenshot": "https://github.com/Jumanjigobez/storymaker/assets/73429193/8221b6de-38ad-4e37-889e-817ac097da79",
+    "title": "Storymaker",
+    "info": "A playful and simple 'See 'N' Say StoryMaker' web-based application that is responsive and highly interactive, developed using basic HTML, CSS, and vanilla JavaScript. Play now...",
+    "link": "https://jumanjigobez.github.io/storymaker",
+    "type": "personal_project"
+  },
+  {
+    "id": 42,
+    "screenshot": "https://github.com/user-attachments/assets/ce1730d3-1c37-42c4-af21-a8d57675807f",
+    "title": "J-Transcriptor",
+    "info": "Convert speech to text easily with this tool, which allows you to copy and save your transcriptions. Developed with basic HTML, CSS, and JavaScript.",
+    "link": "https://jumanjigobez.github.io/J-Transcriptor",
+    "type": "personal_project"
   }
 ]

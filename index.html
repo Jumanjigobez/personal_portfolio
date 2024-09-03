@@ -1,62 +1,79 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Juma Chaje Portfolio #Software Engineer" content="projects done by Juma Chaje, about, and contacts.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      description="Juma Chaje Portfolio #Software Engineer"
+      content="projects done by Juma Chaje, about, and contacts."
+    />
     <title>Juma Chaje | Personal Portfolio Website</title>
-    <link rel="shortcut icon" type="image/png" href="images/juma1.png">
+    <link rel="shortcut icon" type="image/png" href="images/juma1.png" />
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
     <script defer src="data.json"></script>
   </head>
 
   <body>
-    
-      <div class="preloader" id="preloader">
-        <div class="counter" id="counter">0</div>
-        <div class="text" id="text">Welcome To <span>Jumanji...</span></div>
-      </div>
+    <div class="preloader" id="preloader">
+      <div class="counter" id="counter">0</div>
+      <div class="text" id="text">Welcome To <span>Jumanji...</span></div>
+    </div>
 
-      <header id="header">
-        <div class="logo">
-          <h1>Juma<span>Chaje</span></h1>
+    <header id="header">
+      <div class="logo">
+        <h1>Juma<span>Chaje</span></h1>
+      </div>
+      <div class="menu">
+        <div id="menu_btn">
+          <p onclick="toggleMenu(this);"><i class="fa fa-bars"></i></p>
         </div>
-        <div class="menu">
-          <div id="menu_btn">
-            <p onclick="toggleMenu(this);"><i class="fa fa-bars"></i></p>
-          </div>
-          <nav>
-            <ul id="menu">
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+        <nav>
+          <ul id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <section id="section_1">
         <div class="part_1">
-          <img src="images/homepic.png" alt="Juma Chaje Image">
+          <img src="images/homepic.png" alt="Juma Chaje Image" />
         </div>
         <div class="part_2">
-          <p>Hello, <span id="visitor"></span><br> My name is <br><b>Juma Chaje</b> <br>And I'm a: </p>
+          <p>
+            Hello, <span id="visitor"></span><br />
+            My name is <br /><b>Juma Chaje</b> <br />And I'm a:
+          </p>
 
           <div class="typing_part">
             <p><span class="typing"></span></p>
           </div>
 
-          <a href="#contact"><button class="btn">Hire Me <i class="fa fa-arrow-down" id="down"></i></button></a>
+          <a href="#contact"
+            ><button class="btn">
+              Hire Me <i class="fa fa-arrow-down" id="down"></i></button
+          ></a>
         </div>
       </section>
 
@@ -66,52 +83,92 @@
         </div>
         <div class="part_2">
           <div class="image_part">
-            <img src="images/juma1.1.jpg" alt="Juma Chaje Image 2">
+            <img src="images/juma1.1.jpg" alt="Juma Chaje Image 2" />
           </div>
 
           <div class="info">
             <h3>I'm Juma & I'm a:</h3>
-            <marquee>Software Engineer, Frontend Developer, Freelancer & Youtuber.</marquee>
-            <p>I am a dedicated professional known as <q>Jumanji</q> in my personal sphere. My fervent passion lies in the tech industry, particularly in programming roles. With a robust skill set and extensive experience, I am confident in my ability to excel. I am well-equipped to contribute remotely or in an office environment, ready to bring innovation and dedication to any team. Thank you for visiting my portfolio webpage; I eagerly anticipate the opportunity to collaborate with you <b>Mr/Mrs/Miss. <span id="visitor"></span>.</b></p>
-            <a href="MyResume.pdf" target="_blank"><button class="btn">View Resume</button></a>
+            <marquee
+              >Software Engineer, Frontend Developer, Freelancer &
+              Youtuber.</marquee
+            >
+            <p>
+              I am a dedicated professional known as <q>Jumanji</q> in my
+              personal sphere. My fervent passion lies in the tech industry,
+              particularly in programming roles. With a robust skill set and
+              extensive experience, I am confident in my ability to excel. I am
+              well-equipped to contribute remotely or in an office environment,
+              ready to bring innovation and dedication to any team. Thank you
+              for visiting my portfolio webpage; I eagerly anticipate the
+              opportunity to collaborate with you
+              <b>Mr/Mrs/Miss. <span id="visitor"></span>.</b>
+            </p>
+            <button
+              class="btn"
+              onclick="window.location.href='mailto:jumagobe3@gmail.com?subject=Request%20Resume&body=Hello,%0A%0AI would like to request a copy of your resume.%0A%0AThank you!'"
+            >
+              Request Resume
+            </button>
           </div>
         </div>
       </section>
 
       <section id="services">
-         <div class="part_1">
+        <div class="part_1">
           <h2>My Services</h2>
         </div>
 
         <div class="part_2">
           <div class="box">
             <h4>Website Development</h4>
-            <p>I can develop a more <b>Proffesional</b> and more <b>Responsive</b> Website according to your needs and make it to be more <b>Attractive</b> to your customers.</p>
+            <p>
+              I can develop a <b>professional</b> and <b>responsive</b> website
+              tailored to your needs, designed to be <b>attractive</b> to your
+              customers.
+            </p>
           </div>
 
-           <div class="box">
+          <div class="box">
             <h4>Frontend Development</h4>
-            <p>I can make the Interfaces on your sites to be more <b>user friendly</b> and have more appealing eye-catching themes to your visitors.</p>
+            <p>
+              I can create <b>user-friendly</b> interfaces with eye-catching
+              themes to enhance the experience for your visitors.
+            </p>
           </div>
 
           <div class="box">
             <h4>Backend Development</h4>
-            <p>I can also develop web application sites like management applications that can store data in a database using new programming technologies to make it more <b>flexible</b>.</p>
+            <p>
+              I can develop web applications, such as management systems, that
+              store data in a database using modern technologies to ensure
+              <b>flexibility</b>.
+            </p>
           </div>
 
-           <div class="box">
+          <div class="box">
             <h4>Mobile Development</h4>
-            <p>I am able to develop both android & ios native mobile applications using new programming techniques to make it much <b>Faster</b> and also hosting in their respective stores.</p>
+            <p>
+              I can build both Android and iOS native mobile applications using
+              advanced techniques to make them <b>faster</b> and ensure smooth
+              hosting in their respective stores.
+            </p>
           </div>
 
           <div class="box">
             <h4>System Development</h4>
-            <p>I can develop systems that are <b>Time-Saving</b> and <b>Simple</b> to use and work with.</p>
+            <p>
+              I can develop systems that are <b>time-saving</b> and
+              <b>easy</b> to use.
+            </p>
           </div>
 
           <div class="box">
             <h4>Content Creator</h4>
-            <p>I have a youtube channel where I talk more about programming, in-order to mentor new learning programmers, hence I can create contents that are more <b>Interesting</b> and got <b>Top-Notch</b> too.</p>
+            <p>
+              I run a YouTube channel where I discuss programming and mentor new
+              programmers. I can create <b>engaging</b> and
+              <b>high-quality</b> content.
+            </p>
           </div>
         </div>
       </section>
@@ -123,79 +180,137 @@
 
         <div class="part_2">
           <div class="info">
-            <h3>My Creative Skills & Experiences: </h3>
-            <p>I have learned much more in field of Information and Technology (IT) and attained great, required and markettable skills in programming. The programming skills that I have attained, understood and got real experience with are as shown :-</p>
+            <h3>My Creative Skills & Experiences:</h3>
+            <p>
+              I have gained extensive knowledge and practical experience in the
+              field of Information Technology (IT), acquiring valuable and
+              marketable programming skills. Below are the programming skills I
+              have developed and gained hands-on experience with:-
+            </p>
           </div>
 
           <div class="card">
-              <div class="skills">
-                <div class="skill-name">HTML</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="99%" id="skill" style="max-width:99%;"></div>
-                </div>
-
-                <div class="skill-name">CSS</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="99%" id="skill" style="max-width:99%;"></div>
-                </div>
-
-                <div class="skill-name">JavaScript</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="99%" id="skill" style="max-width:99%;"></div>
-                </div>
-
-                <div class="skill-name">WORDPRESS</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="99%" id="skill" style="max-width:99%;"></div>
-                </div>
-
-                <div class="skill-name">JQuery</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="90%" id="skill" style="max-width:90%;"></div>
-                </div>
-
-                <div class="skill-name">React Js</div>
-                <div class="skill-bar">
-                  <div class="skill-per" per="85%" id="skill" style="max-width:85%;"></div>
-                </div>
+            <div class="skills">
+              <div class="skill-name">HTML</div>
+              <div class="skill-bar">
+                <div
+                  class="skill-per"
+                  per="99%"
+                  id="skill"
+                  style="max-width: 99%"
+                ></div>
               </div>
 
-              <div class="button">
-                <button class="btn" id="more_btn">More Skills <i class="fa fa-arrow-down" id="down"></i></button>
+              <div class="skill-name">CSS</div>
+              <div class="skill-bar">
+                <div
+                  class="skill-per"
+                  per="99%"
+                  id="skill"
+                  style="max-width: 99%"
+                ></div>
               </div>
+
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-bar">
+                <div
+                  class="skill-per"
+                  per="99%"
+                  id="skill"
+                  style="max-width: 99%"
+                ></div>
+              </div>
+
+              <div class="skill-name">WORDPRESS</div>
+              <div class="skill-bar">
+                <div
+                  class="skill-per"
+                  per="95%"
+                  id="skill"
+                  style="max-width: 95%"
+                ></div>
+              </div>
+
+              <div class="skill-name">JQuery</div>
+              <div class="skill-bar">
+                <div
+                  class="skill-per"
+                  per="90%"
+                  id="skill"
+                  style="max-width: 90%"
+                ></div>
+              </div>
+
+              <div class="skill-name">React Js</div>
+              <div class="skill-bar">
+                <div
+                  class="skill-per"
+                  per="85%"
+                  id="skill"
+                  style="max-width: 85%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="button">
+              <button class="btn" id="more_btn">
+                More Skills <i class="fa fa-arrow-down" id="down"></i>
+              </button>
+            </div>
           </div>
-
         </div>
 
-        <div class="part_3" id="more_card" style="display: none;">
-            <div class="card">
-
+        <div class="part_3" id="more_card" style="display: none">
+          <div class="card">
             <div class="skill-name">React Native</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="80%" id="skill" style="max-width:80%;"></div>
-              </div>
+            <div class="skill-bar">
+              <div
+                class="skill-per"
+                per="85%"
+                id="skill"
+                style="max-width: 85%"
+              ></div>
+            </div>
+
+            <div class="skill-name">SQL</div>
+            <div class="skill-bar">
+              <div
+                class="skill-per"
+                per="90%"
+                id="skill"
+                style="max-width: 90%"
+              ></div>
+            </div>
 
             <div class="skill-name">PHP</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="85%" id="skill" style="max-width:85%;"></div>
-              </div>
+            <div class="skill-bar">
+              <div
+                class="skill-per"
+                per="90%"
+                id="skill"
+                style="max-width: 90%"
+              ></div>
+            </div>
 
-              <div class="skill-name">PYTHON</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="90%" id="skill" style="max-width:90%;"></div>
-              </div>
+            <div class="skill-name">PYTHON</div>
+            <div class="skill-bar">
+              <div
+                class="skill-per"
+                per="90%"
+                id="skill"
+                style="max-width: 90%"
+              ></div>
+            </div>
 
-              <div class="skill-name">C</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="90%" id="skill" style="max-width:90%;"></div>
-              </div>
-
-               <div class="skill-name">C++</div>
-              <div class="skill-bar">
-                <div class="skill-per" per="90%" id="skill" style="max-width:90%;"></div>
-              </div>
-
-
+            <div class="skill-name">C++</div>
+            <div class="skill-bar">
+              <div
+                class="skill-per"
+                per="90%"
+                id="skill"
+                style="max-width: 90%"
+              ></div>
+            </div>
           </div>
         </div>
       </section>
@@ -210,65 +325,74 @@
             <li onclick="handleFilter(this,'all')">All</li>
             <li onclick="handleFilter(this,'landing_page')">Landing Pages</li>
             <li onclick="handleFilter(this,'api')">API's</li>
-            <li onclick="handleFilter(this,'personal_project')">Personal Projects</li>
-            <li onclick="handleFilter(this,'react_project')">React Projects</li>
-            <li onclick="handleFilter(this,'client_project')">Client Projects</li>
+            <li onclick="handleFilter(this,'personal_project')">
+              Personal Projects
+            </li>
+            <!-- <li onclick="handleFilter(this,'react_project')">React Projects</li> -->
+            <li onclick="handleFilter(this,'client_project')">
+              Client Projects
+            </li>
           </ul>
         </div>
 
-       
         <div class="part_2">
           <div class="loading_screen">
             <div class="boxLoading"></div>
           </div>
 
           <div class="container">
-             <!--- Projects will be dynamically shown from local json data--->
+            <!--- Projects will be dynamically shown from local json data--->
           </div>
-          
-          
         </div>
       </section>
 
       <section id="contact">
-         <div class="part_1">
+        <div class="part_1">
           <h2>Contact me</h2>
         </div>
 
         <div class="part_2">
           <div class="info">
-            <h3>Get in Touch:</h3>
-            <p>Hey, <span id="visitor"></span> hope you enjoyed the view. For any services projects you would like to be done nicely and eye-catching like this. Don't hesitate just Message me and I'll be sure to respond with no time.</p>
-            <p>Atleast say Hello and pass by, let's have a cup of coffee :)</p>
+            <h3>Get in Touch</h3>
+            <p>
+              Hi there, <span id="visitor"></span>! I hope you enjoyed the view.
+              If you have any projects or services you'd like to see executed
+              with precision and flair, don't hesitate to reach out. I'll be
+              sure to respond promptly.
+            </p>
+            <p>
+              Even if it's just to say hello, I'd love to hear from you. Let's
+              connect over a cup of coffee! :)
+            </p>
+
             <ul>
               <li>
-                 <i class="fa fa-user"></i>
-                 <h4>Name</h4>
-                 <p>Juma Chaje</p>
+                <i class="fa fa-user"></i>
+                <h4>Name</h4>
+                <p>Juma Chaje</p>
               </li>
               <li>
-                 <i class="fa fa-map-marker"></i>
-                 <h4>Address</h4>
-                 <p>Nairobi, Kenya</p>
+                <i class="fa fa-map-marker"></i>
+                <h4>Address</h4>
+                <p>Nairobi, Kenya</p>
               </li>
               <li>
-                 <i class="fa fa-phone"></i>
-                 <h4>Phone</h4>
-                 <p>+254 799 333 217</p>
+                <i class="fa fa-phone"></i>
+                <h4>Phone</h4>
+                <p>+254 799 333 217</p>
               </li>
               <li>
-                 <i class="fa fa-envelope"></i>
-                 <h4>Email</h4>
-                 <p>Jumagobe3@gmail.com</p>
+                <i class="fa fa-envelope"></i>
+                <h4>Email</h4>
+                <p>Jumagobe3@gmail.com</p>
               </li>
-
             </ul>
           </div>
 
           <div class="contact_form">
             <h3>Message me:</h3>
-           
-           <!-- <form class="cform">
+
+            <!-- <form class="cform">
              
              <div class="input-data">
                <input type="text" name="name" required="">
@@ -299,9 +423,11 @@
              </div>
              
            </form> -->
-           <div class="c_box">
+            <div class="c_box">
               <div class="icon">
-                <a href="mailto:jumagobe3@gmail.com" target="_blank"><img src="images/gmail.png" alt="Gmail Icon"></a>
+                <a href="mailto:jumagobe3@gmail.com" target="_blank"
+                  ><img src="images/gmail.png" alt="Gmail Icon"
+                /></a>
               </div>
 
               <div class="icon">
@@ -309,42 +435,101 @@
               </div>
 
               <div class="icon">
-                <a href="https://wa.me/254799333217" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp Icon"></a>
+                <a href="https://wa.me/254799333217" target="_blank"
+                  ><img src="images/whatsapp.png" alt="Whatsapp Icon"
+                /></a>
               </div>
-
-           </div>
+            </div>
           </div>
-
         </div>
-         <section id="section_7">
-          <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Nairobi+Kiamaiko&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://www.embedmymap.com/">Embed My Map</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:500px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:500px;}.gmap_iframe {height:500px!important;}</style></div> 
-         </section>
+        <section id="section_7">
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe
+                class="gmap_iframe"
+                width="100%"
+                frameborder="0"
+                scrolling="no"
+                marginheight="0"
+                marginwidth="0"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ongoza Njia Community Development Centre, Huruma Rd, Nairobi, Kenya&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ></iframe
+              ><a href="https://www.embedmymap.com/">Embed My Map</a>
+            </div>
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                width: 100%;
+                height: 500px;
+              }
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                width: 100%;
+                height: 500px;
+              }
+              .gmap_iframe {
+                height: 500px !important;
+              }
+            </style>
+          </div>
+        </section>
       </section>
 
-     <!---Sidebar items of social media icons--->
-     <div id="sidebar">
-       <div id="sidebar_items">
-         <ul>
-           <li><a href="https://www.facebook.com/stories/2102014653385107/UzpfSVNDOjg5MDE0ODAzNTcwNzUzMA==/?view_single=true" target="_blank"><i class="fa fa-facebook"></i></a></li>
-           <li><a href="https://www.instagram.com/jumanjicasilas/" target="_blank"><i class="fa fa-instagram"></i>
-           </a></li>
-           <li><a href="https://www.youtube.com/channel/UCw3RDC7Nn5lzU15-HdOC6WA" target="_blank"><i class="fa fa-youtube"></i></a></li>
-           <li><a href="https://www.linkedin.com/in/juma-chaje/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-           <li><a href="https://github.com/Jumanjigobez" target="_blank"><i class="fa fa-github"></i></a></li>
-           <li><a href="https://wa.me/254799333217" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-        
-         </ul>
+      <!---Sidebar items of social media icons--->
+      <div id="sidebar">
+        <div id="sidebar_items">
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/stories/2102014653385107/UzpfSVNDOjg5MDE0ODAzNTcwNzUzMA==/?view_single=true"
+                target="_blank"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/jumanjicasilas/"
+                target="_blank"
+                ><i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@Jumanji_Dev" target="_blank"
+                ><i class="fa fa-youtube"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/juma-chaje/" target="_blank"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/Jumanjigobez" target="_blank"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://wa.me/254799333217" target="_blank"
+                ><i class="fa fa-whatsapp"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
 
       <footer id="footer">
-         <h2>Coded with <i class="fa fa-heart"></i> by Jumanji</h2>
-         <p>Juma Chaje | &copy 2024 All rights reserved</p>
+        <h2>Coded with <i class="fa fa-heart"></i> by Jumanji</h2>
+        <p>Juma Chaje | &copy 2024 All rights reserved</p>
 
-          <div id="top">
-            <p><a href="#section_1"><i class="fa fa-arrow-up"></i></a></p>
-          </div>
+        <div id="top">
+          <p>
+            <a href="#section_1"><i class="fa fa-arrow-up"></i></a>
+          </p>
+        </div>
       </footer>
     </main>
     <script src="script/script.js"></script>
   </body>
+</html>
