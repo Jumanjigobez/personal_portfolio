@@ -1,4 +1,4 @@
-//A Function to get elements id
+//A Function to ease retrieval of DOM elements
 elem = (x) => {
   return document.getElementById(x);
 };
@@ -10,15 +10,16 @@ var text = elem("text");
 
 loader = () => {
   let count = setInterval(function () {
-    var c = parseInt($(".counter").text());
-    $(".counter").text((++c).toString());
+    var c = parseInt(counter.innerText);
+    counter.innerText = `${(++c).toString()}`;
 
     if (c == 100) {
       clearInterval(count);
       counter.classList.add("hide");
-      $(text).fadeIn(1000);
-
-      $(text).fadeOut(2000);
+      // $(text).fadeIn(1000);
+      text.classList.add("fadeIn");
+      // $(text).fadeOut(2000);
+      text.classList.add("fadeOut");
 
       preloader.classList.add("active");
       //Get Visitor's name

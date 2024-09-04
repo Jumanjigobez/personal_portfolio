@@ -75,12 +75,44 @@ main {
   font-size: 0.5em;
 }
 .text {
-  display: none;
+  opacity: 0;
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 5px;
   margin: 10px;
+  transition: all 0.3s linear;
 }
+.text.fadeIn {
+  animation: fadeIn 0.5s linear;
+}
+.text.fadeOut {
+  animation: fadeOut 1s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .text span {
   color: limegreen;
 }
@@ -193,6 +225,11 @@ main {
 #visitor {
   color: var(--theme-color-dark);
   font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-flex;
+  max-width: 200px;
 }
 .typing_part {
   margin-top: -5rem;
