@@ -640,11 +640,26 @@ a {
   padding: 0.5rem 1rem;
   font-weight: 400;
   cursor: pointer;
+  position: relative;
   transition: all 0.2s ease-in-out;
 }
 .filter_bar ul li:hover,
 .filter_bar ul li.active {
   color: var(--theme-color-dark);
+}
+
+.filter_bar .project_count {
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  height: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+
+  color: var(--theme-color-dark);
+  padding: 0.2rem 0.1rem;
 }
 
 #projects .part_2 .loading_screen {

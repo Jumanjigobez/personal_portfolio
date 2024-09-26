@@ -127,7 +127,7 @@ fetch(url)
   .then((res) => res.json())
   .then((data) => {
     let sorted_array = data.sort((a, b) => b.id - a.id); //Sorting in Desc Order for Latest projects
-    console.log(sorted_array);
+    // console.log(sorted_array);
     sorted_array.forEach((project) => {
       project_container.innerHTML += `
 		<div class="p_cards">
@@ -222,3 +222,43 @@ const handleFilter = (elem, x) => {
       }
     });
 };
+
+//Project Counter part
+var count_all = document.querySelector("span.count_all"),
+  count_landing = document.querySelector("span.count_landing"),
+  count_api = document.querySelector("span.count_api"),
+  count_personal = document.querySelector("span.count_personal"),
+  count_client = document.querySelector("span.count_client");
+
+const count_projects = () => {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      let all_projects = data.length,
+        landing_projects = data.filter(
+          (project) => project.type == "landing_page"
+        ).length,
+        api_projects = data.filter((project) => project.type == "api").length,
+        personal_projects = data.filter(
+          (project) => project.type == "personal_project"
+        ).length,
+        client_projects = data.filter(
+          (project) => project.type == "client_project"
+        ).length;
+
+      // var counter = setInterval(() => {
+      //   let c_all = parseInt(count_all.innerText),
+      //     c_landing = parseInt(count_landing.innerText),
+      //     c_api = parseInt(count_api.innerText),
+      //     c_personal = parseInt(count_personal.innerText),
+      //     c_clientg = parseInt(count_client.innerText);
+      // }, 40);
+
+      count_all.innerText = `${all_projects}+`;
+      count_landing.innerText = `${landing_projects}+`;
+      count_api.innerText = `${api_projects}+`;
+      count_personal.innerText = `${personal_projects}+`;
+      count_client.innerText = `${client_projects}+`;
+    });
+};
+count_projects();

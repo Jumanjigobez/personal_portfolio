@@ -319,15 +319,22 @@
 
         <div class="filter_bar">
           <ul>
-            <li onclick="handleFilter(this,'all')">All</li>
-            <li onclick="handleFilter(this,'landing_page')">Landing Pages</li>
-            <li onclick="handleFilter(this,'api')">API's</li>
+            <li onclick="handleFilter(this,'all')">
+              All <span class="project_count count_all">0</span>
+            </li>
+            <li onclick="handleFilter(this,'landing_page')">
+              Landing Pages <span class="project_count count_landing">0</span>
+            </li>
+            <li onclick="handleFilter(this,'api')">
+              API's <span class="project_count count_api">0</span>
+            </li>
             <li onclick="handleFilter(this,'personal_project')">
-              Personal Projects
+              Personal Projects <span class="project_count count_personal">0</span>
             </li>
             <!-- <li onclick="handleFilter(this,'react_project')">React Projects</li> -->
             <li onclick="handleFilter(this,'client_project')">
-              Client Projects
+              Client Projects <span class="project_count count_client">0</span>
+            </li>
             </li>
           </ul>
         </div>
