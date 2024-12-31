@@ -25,21 +25,34 @@ loader = () => {
       //Get Visitor's name
       var visitor = document.querySelectorAll("#visitor");
 
-      var name = prompt("What name shall I call you?", "My Guest");
-
-      if (name === "") {
-        for (var i = 0; i < visitor.length; i++) {
-          visitor[i].innerText = "My Guest";
+      Swal.fire({
+        title: "What name shall I call you?",
+        input: "text",
+        inputValue: "My Guest",
+        showCancelButton: true,
+        inputValidator: (value) => {
+          if (!value) {
+            return "You need to write something!";
+          }
+        },
+      }).then((result) => {
+        if (result.isConfirmed) {
+          var name = result.value;
+          if (name === "") {
+            for (var i = 0; i < visitor.length; i++) {
+              visitor[i].innerText = "My Guest";
+            }
+          } else {
+            for (var i = 0; i < visitor.length; i++) {
+              visitor[i].innerText = name;
+            }
+          }
+        } else {
+          for (var i = 0; i < visitor.length; i++) {
+            visitor[i].innerText = "My Guest";
+          }
         }
-      } else if (name) {
-        for (var i = 0; i < visitor.length; i++) {
-          visitor[i].innerText = name;
-        }
-      } else {
-        for (var i = 0; i < visitor.length; i++) {
-          visitor[i].innerText = "My Guest";
-        }
-      }
+      });
     }
   }, 40);
 };
