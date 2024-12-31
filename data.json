@@ -304,5 +304,29 @@
     "info": "Convert speech to text easily with this tool, which allows you to copy and save your transcriptions. Developed with basic HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/J-Transcriptor",
     "type": "personal_project"
+  },
+  {
+    "id": 43,
+    "screenshot": "images/commii.png",
+    "title": "Community Implementing Initiative",
+    "info": "A Community Based Organization designed to give hope and restore dignity to the girl child and most vulnerable children in the community.",
+    "link": "https://commii.co.ke",
+    "type": "client_project"
+  },
+  {
+    "id": 44,
+    "screenshot": "images/ciik.png",
+    "title": "Community Implementing Initiative Kenya",
+    "info": "A Non-Governmental Organization, umbrella of Community Implementing Initiative.Developed with basic HTML, CSS, and JavaScript.",
+    "link": "https://commii.co.ke",
+    "type": "client_project"
+  },
+  {
+    "id": 45,
+    "screenshot": "images/optima.png",
+    "title": "Optima Migration Consultants",
+    "info": "Customized, eye-catching website for Optima where they offer timely processing of various services related to regular labor migration. Developed with basic HTML, CSS, and JavaScript.",
+    "link": "https://optimamigrationconsultants.co.ke",
+    "type": "client_project"
   }
 ]
