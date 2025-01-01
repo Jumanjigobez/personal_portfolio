@@ -29,10 +29,11 @@ loader = () => {
         title: "What name shall I call you?",
         input: "text",
         inputValue: "My Guest",
+        allowOutsideClick: false,
         showCancelButton: true,
         inputValidator: (value) => {
           if (!value) {
-            return "You need to write something!";
+            return "You need to write your Name!";
           }
         },
       }).then((result) => {
@@ -241,7 +242,8 @@ var count_all = document.querySelector("span.count_all"),
   count_landing = document.querySelector("span.count_landing"),
   count_api = document.querySelector("span.count_api"),
   count_personal = document.querySelector("span.count_personal"),
-  count_client = document.querySelector("span.count_client");
+  count_client = document.querySelector("span.count_client"),
+  options = document.querySelectorAll(".custom_select option");
 
 const count_projects = () => {
   fetch(url)
@@ -272,6 +274,12 @@ const count_projects = () => {
       count_api.innerText = `${api_projects}+`;
       count_personal.innerText = `${personal_projects}+`;
       count_client.innerText = `${client_projects}+`;
+
+      options[0].textContent = `All (${all_projects}+)`;
+      options[1].textContent = `Landing Pages (${landing_projects}+)`;
+      options[2].textContent = `API's (${api_projects}+)`;
+      options[3].textContent = `Personal Projects (${personal_projects}+)`;
+      options[4].textContent = `Client Projects (${client_projects}+)`;
     });
 };
 count_projects();
