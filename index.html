@@ -343,6 +343,16 @@
           </ul>
         </div>
 
+        <div class="filter_bar mobile">
+          <select class="custom_select" onchange="handleFilter(this, this.value)"> 
+            <option value="all">All</option> 
+            <option value="landing_page">Landing Pages</option> 
+            <option value="api">API's</option> 
+            <option value="personal_project">Personal Projects</option> 
+            <option value="client_project">Client Projects</option>
+          </select>
+        </div>
+        
         <div class="part_2">
           <div class="loading_screen">
             <div class="boxLoading"></div>
