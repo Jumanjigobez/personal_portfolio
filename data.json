@@ -341,7 +341,7 @@
     "id": 47,
     "screenshot": "https://github.com/user-attachments/assets/6c70ca96-95d8-4ba8-93f5-3e41497f42e3",
     "title": "Soko Langu",
-    "info": "A web-based application system designed to facilitate market trade and marketing activities for farmers, traders, and consumers. This platform allows users to interact, place orders, and manage their products effectively. It offers an intuitive interface for farmers to list their products, consumers to browse the products, and allows communication between the two parties. Dev using React Js with PHP & MySQL",
+    "info": "A web-based application system designed to facilitate market trade and marketing activities for farmers, traders, and consumers. Dev using React Js with PHP & MySQL",
     "link": "https://sokolangu.infinityfreeapp.com",
     "type": "personal_project"
   }
