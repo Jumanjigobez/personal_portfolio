@@ -411,7 +411,7 @@ a {
   padding: 1rem;
   text-align: center;
   border-radius: 6px;
-  cursor: pointer;
+ 
   transition: all linear 0.5s;
 }
 #services .part_2 .box:hover {
