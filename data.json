@@ -51,9 +51,9 @@
     "id": 7,
     "screenshot": "https://user-images.githubusercontent.com/73429193/203296203-d99c9234-cfca-4d5e-9813-3c28e06fb348.PNG",
     "title": "Millenium Booklets",
-    "info": "A simple and responsive site for a client that provides past paper booklets for students, displaying fees for each booklet. Developed using only HTML, CSS, and JavaScript.",
+    "info": "A simple and responsive site that provides past paper booklets for students, displaying fees for each booklet. Developed using only HTML, CSS, and JavaScript.",
     "link": "https://jumanjigobez.github.io/milleniumbooklets/",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 8,
@@ -181,7 +181,7 @@
     "title": "Delightsome Community Initiative",
     "info": "A community-based organization dedicated to supporting street families. Developed using HTML, CSS, and JavaScript.",
     "link": "https://www.delightsome.org",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 24,
@@ -189,7 +189,7 @@
     "title": "Kenya Fencing Federation",
     "info": "The official website of the Kenya Fencing Federation. Featuring a highly responsive and visually appealing theme, developed with HTML, CSS, and JavaScript. Check it out...",
     "link": "https://www.fencing.co.ke",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 27,
@@ -213,7 +213,7 @@
     "title": "Blossoms of Ghetto",
     "info": "A custom-designed website with a few animations, built using HTML5, CSS3, and vanilla JavaScript. Explore it now...",
     "link": "https://www.blossomsofghetto.org",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 30,
@@ -221,7 +221,7 @@
     "title": "Reality Tested Youth Programme",
     "info": "A community-based site that is highly responsive and interactive, developed using HTML5, CSS3, JavaScript, and a custom JSON file. Check it out...",
     "link": "https://www.realitytestedyouth.org",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 31,
@@ -311,7 +311,7 @@
     "title": "Community Implementing Initiative",
     "info": "A Community Based Organization designed to give hope and restore dignity to the girl child and most vulnerable children in the community.",
     "link": "https://commii.co.ke",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 44,
@@ -319,7 +319,7 @@
     "title": "Community Implementing Initiative Kenya",
     "info": "A Non-Governmental Organization, umbrella of Community Implementing Initiative.Developed with basic HTML, CSS, and JavaScript.",
     "link": "https://ciik.org",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 45,
@@ -327,7 +327,7 @@
     "title": "Optima Migration Consultants",
     "info": "Customized, eye-catching website for Optima where they offer timely processing of various services related to regular labor migration. Developed with basic HTML, CSS, and JavaScript.",
     "link": "https://optimamigrationconsultants.co.ke",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 46,
@@ -335,7 +335,7 @@
     "title": "Kenya Union of Hair and Beauty",
     "info": "A National Trade Union that represents workers in Hair and Beauty Industry. Check them out",
     "link": "https://www.kuhabwo.org",
-    "type": "client_project"
+    "type": "formal_project"
   },
   {
     "id": 47,

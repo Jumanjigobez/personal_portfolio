@@ -411,7 +411,7 @@ a {
   padding: 1rem;
   text-align: center;
   border-radius: 6px;
- 
+
   transition: all linear 0.5s;
 }
 #services .part_2 .box:hover {
@@ -1382,14 +1382,24 @@ textarea:focus ~ label, textarea:valid ~ label{
   #projects .filter_bar.mobile {
     display: flex;
   }
+
+  .filter_bar::before {
+    content: "🔍";
+    width: 30%;
+    top: 15%;
+    left: 3%;
+  }
+
+  .custom_select {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
   .filter_bar ul {
     flex-direction: column;
     grid-gap: 1rem;
   }
-  .filter_bar::before {
-    width: 30%;
-    top: 10%;
-  }
+
   .filter_bar ul li {
     width: 100%;
     text-align: center;

@@ -75,6 +75,7 @@ var typed = new Typed(".typing", {
   strings: [
     "Software Engineer",
     "Frontend Developer",
+    "Technical Supporter",
     "Freelancer",
     "Youtuber",
   ],
@@ -242,7 +243,7 @@ var count_all = document.querySelector("span.count_all"),
   count_landing = document.querySelector("span.count_landing"),
   count_api = document.querySelector("span.count_api"),
   count_personal = document.querySelector("span.count_personal"),
-  count_client = document.querySelector("span.count_client"),
+  count_formal = document.querySelector("span.count_formal"),
   options = document.querySelectorAll(".custom_select option");
 
 const count_projects = () => {
@@ -257,8 +258,8 @@ const count_projects = () => {
         personal_projects = data.filter(
           (project) => project.type == "personal_project"
         ).length,
-        client_projects = data.filter(
-          (project) => project.type == "client_project"
+        formal_projects = data.filter(
+          (project) => project.type == "formal_project"
         ).length;
 
       // var counter = setInterval(() => {
@@ -266,20 +267,20 @@ const count_projects = () => {
       //     c_landing = parseInt(count_landing.innerText),
       //     c_api = parseInt(count_api.innerText),
       //     c_personal = parseInt(count_personal.innerText),
-      //     c_clientg = parseInt(count_client.innerText);
+      //     c_formalg = parseInt(count_formal.innerText);
       // }, 40);
 
       count_all.innerText = `${all_projects}+`;
       count_landing.innerText = `${landing_projects}+`;
       count_api.innerText = `${api_projects}+`;
       count_personal.innerText = `${personal_projects}+`;
-      count_client.innerText = `${client_projects}+`;
+      count_formal.innerText = `${formal_projects}+`;
 
       options[0].textContent = `All (${all_projects}+)`;
       options[1].textContent = `Landing Pages (${landing_projects}+)`;
       options[2].textContent = `API's (${api_projects}+)`;
       options[3].textContent = `Personal Projects (${personal_projects}+)`;
-      options[4].textContent = `Client Projects (${client_projects}+)`;
+      options[4].textContent = `Formal Projects (${formal_projects}+)`;
     });
 };
 count_projects();
