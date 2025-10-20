@@ -284,3 +284,33 @@ const count_projects = () => {
     });
 };
 count_projects();
+
+/*Message Form Functionality*/
+const contact_form = document.querySelector("form.cform");
+
+contact_form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // alert("Button Working");
+
+  emailjs.sendForm("service_uavpl8r", "template_8nni17a", contact_form).then(
+    () => {
+      Swal.fire({
+        icon: "success",
+        title: "Message Sent!",
+        text: "Thank you for reaching out. I’ll get back to you soon.",
+        confirmButtonColor: "limegreen",
+      });
+      contact_form.reset();
+    },
+    (error) => {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        // text: "Something went wrong: " + error,
+        text: "Something went wrong! Please Try Again",
+        confirmButtonColor: "#dc3545",
+      });
+    }
+  );
+});
