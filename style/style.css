@@ -906,12 +906,12 @@ a {
   margin-top: 15px;
 }
 
-/* .input-data{
+.input-data {
   width: 100%;
   background: #222;
   position: relative;
 }
-.input-data textarea{
+.input-data textarea {
   width: 100%;
   min-height: 71px;
   resize: none;
@@ -922,7 +922,7 @@ a {
   margin-top: 50px;
   border-bottom: 2px solid silver;
 }
-.input-data input{
+.input-data input {
   width: 100%;
   color: #fafafa;
   font-size: 15px;
@@ -931,19 +931,21 @@ a {
   margin-top: 50px;
   background: #222;
 }
-.input-data input:focus, textarea:focus{
+.input-data input:focus,
+textarea:focus {
   outline: none;
 }
 .input-data input:focus ~ label,
-.input-data input:valid ~ label{
+.input-data input:valid ~ label {
   transform: translateY(-20px);
   color: limegreen;
 }
-textarea:focus ~ label, textarea:valid ~ label{
+textarea:focus ~ label,
+textarea:valid ~ label {
   transform: translateY(-70px);
   color: limegreen;
 }
-.input-data label{
+.input-data label {
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -952,7 +954,7 @@ textarea:focus ~ label, textarea:valid ~ label{
   margin-top: 30px;
   transition: all 0.3s ease-in-out;
 }
-.input-data textarea label{
+.input-data textarea label {
   position: absolute;
   bottom: 50px;
   left: 0;
@@ -961,15 +963,14 @@ textarea:focus ~ label, textarea:valid ~ label{
   margin-top: 0px;
   transition: all 0.3s ease-in-out;
 }
-.input-data .line{
+.input-data .line {
   position: absolute;
   bottom: 0.1px;
   height: 2px;
   width: 100%;
   transition: all 0.3s ease-in-out;
-  
 }
-.input-data .line1{
+.input-data .line1 {
   position: absolute;
   top: 93%;
   bottom: 0px;
@@ -977,7 +978,8 @@ textarea:focus ~ label, textarea:valid ~ label{
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
-.input-data .line:before, .input-data .line1:before{
+.input-data .line:before,
+.input-data .line1:before {
   position: absolute;
   content: "";
   height: 100%;
@@ -988,20 +990,22 @@ textarea:focus ~ label, textarea:valid ~ label{
 }
 
 .input-data input:focus ~ .line:before,
-.input-data input:valid ~ .line:before,textarea:focus ~ .line1:before, textarea:valid ~ .line1:before{
+.input-data input:valid ~ .line:before,
+textarea:focus ~ .line1:before,
+textarea:valid ~ .line1:before {
   transform: scaleX(1);
 }
-.input-data .btn{
+.input-data .btn {
   margin-top: 30px;
   width: 100%;
 }
-.input-data .btn i{
+.input-data .btn i {
   transition: all 0.2s ease-in-out;
 }
-.input-data .btn:hover i{
+.input-data .btn:hover i {
   position: relative;
   animation: right 1s infinite;
-} */
+}
 
 .c_box {
   margin-top: 2rem;
@@ -1022,6 +1026,7 @@ textarea:focus ~ label, textarea:valid ~ label{
 .icon:nth-child(3) img {
   width: 80%;
 }
+
 #section_7 {
   margin-top: 25px;
 }
