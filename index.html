@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"> 
     <link rel="stylesheet" type="text/css" href="style/style.css" />
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
     <script defer src="data.json"></script>
@@ -394,9 +395,9 @@
           </div>
 
           <div class="contact_form">
-            <h3>Message me:</h3>
+            <h3>Say Hello :</h3>
 
-            <!-- <form class="cform">
+            <form class="cform">
              
              <div class="input-data">
                <input type="text" name="name" required="">
@@ -423,11 +424,12 @@
              </div>
              
               <div class="input-data">
-                <a href="mailto:jumagobe3@gmail.com" target="_blank"><button class="btn" name="send">Send Message <i class="fa fa-arrow-right"></i></button></a>
+                <button class="btn" name="send" type="submit">Send Message <i class="fa fa-arrow-right"></i></button>
              </div>
              
-           </form> -->
-            <div class="c_box">
+           </form>
+
+            <!-- <div class="c_box">
               <div class="icon">
                 <a href="mailto:jumagobe3@gmail.com" target="_blank"
                   ><img src="images/gmail.png" alt="Gmail Icon"
@@ -442,10 +444,11 @@
                 <a href="https://wa.me/254799333217" target="_blank"
                   ><img src="images/whatsapp.png" alt="Whatsapp Icon"
                 /></a>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
+
         <section id="section_7">
           <div class="mapouter">
             <div class="gmap_canvas">
@@ -535,5 +538,12 @@
       </footer>
     </main>
     <script src="script/script.js"></script>
+    <script type="text/javascript">
+      (function(){
+         emailjs.init({
+           publicKey: "jPipT_8KPqvqvDiNh",
+         });
+      })();
+   </script>
   </body>
 </html>
