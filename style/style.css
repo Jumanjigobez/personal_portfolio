@@ -6,6 +6,8 @@
 
   --text-white: #fafafa;
   --box-shadow: 15px 20px 15px rgb(0, 128, 0, 30%);
+
+ 
 }
 * {
   margin: 0;
@@ -263,6 +265,13 @@ a {
 .btn:hover {
   color: black;
   background-color: var(--theme-color-light);
+}
+
+.btn.disabled {
+  border: 1px solid transparent;
+  background-color: #333;
+  color: black;
+  cursor: not-allowed;
 }
 
 #section_1 .btn {

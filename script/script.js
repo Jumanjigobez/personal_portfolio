@@ -286,21 +286,32 @@ const count_projects = () => {
 count_projects();
 
 /*Message Form Functionality*/
-const contact_form = document.querySelector("form.cform");
+const contact_form = document.querySelector("form.cform"),
+      send_btn = document.querySelector(".send_btn");
 
+     
 contact_form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   // alert("Button Working");
+  send_btn.disabled = true;
+  send_btn.innerText = "Sending..."; 
+  send_btn.classList.add("disabled");
 
   emailjs.sendForm("service_uavpl8r", "template_8nni17a", contact_form).then(
     () => {
+
+     
       Swal.fire({
         icon: "success",
         title: "Message Sent!",
         text: "Thank you for reaching out. I’ll get back to you soon.",
         confirmButtonColor: "limegreen",
       });
+
+      send_btn.disabled = false;
+      send_btn.innerHTML = `Send Message <i class="fa fa-arrow-right"></i>`;
+      send_btn.classList.remove("disabled");
       contact_form.reset();
     },
     (error) => {
@@ -311,6 +322,10 @@ contact_form.addEventListener("submit", (e) => {
         text: "Something went wrong! Please Try Again",
         confirmButtonColor: "#dc3545",
       });
+
+      send_btn.disabled = false;
+      send_btn.innerHTML = `Send Message <i class="fa fa-arrow-right"></i>`;
+      send_btn.classList.remove("disabled");
     }
   );
 });
