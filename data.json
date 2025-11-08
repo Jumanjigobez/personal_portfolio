@@ -321,16 +321,9 @@
     "link": "https://ciik.org",
     "type": "formal_project"
   },
+  
   {
     "id": 45,
-    "screenshot": "images/optima.png",
-    "title": "Optima Migration Consultants",
-    "info": "Customized, eye-catching website for Optima where they offer timely processing of various services related to regular labor migration. Developed with basic HTML, CSS, and JavaScript.",
-    "link": "https://optimamigrationconsultants.co.ke",
-    "type": "formal_project"
-  },
-  {
-    "id": 46,
     "screenshot": "images/kuhabwo.png",
     "title": "Kenya Union of Hair and Beauty",
     "info": "A National Trade Union that represents workers in Hair and Beauty Industry. Check them out",
@@ -338,7 +331,7 @@
     "type": "formal_project"
   },
   {
-    "id": 47,
+    "id": 46,
     "screenshot": "https://github.com/user-attachments/assets/3630194a-1121-4b9e-b2be-8c902ee2d2b2",
     "title": "Soko Langu",
     "info": "A web-based application system designed to facilitate market trade and marketing activities for farmers, traders, and consumers. Dev using React Js with PHP & MySQL",
@@ -346,3 +339,4 @@
     "type": "personal_project"
   }
 ]
+
