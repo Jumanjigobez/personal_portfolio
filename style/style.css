@@ -1422,6 +1422,9 @@ textarea:valid ~ .line1:before {
   #contact .part_2 .info {
     width: 100%;
   }
+  .btn.send_btn{
+     padding: 0.5rem 2rem;
+  }
   #section_7 {
     margin-top: 25px;
   }
@@ -1436,3 +1439,4 @@ textarea:valid ~ .line1:before {
     padding: 1rem 2rem;
   }
 }
+
