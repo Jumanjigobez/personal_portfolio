@@ -145,8 +145,8 @@ fetch(url)
     // console.log(sorted_array);
     sorted_array.forEach((project) => {
       project_container.innerHTML += `
-		<div class="p_cards">
-			<div class="p_image">
+		<div class="${project.type == 'mobile' ? 'p_cards mobile' : 'p_cards'}">
+			<div class="${project.type == 'mobile' ? 'p_image mobile' : 'p_image'}">
 				<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
 			</div>
       <div class="info">
@@ -156,7 +156,7 @@ fetch(url)
         </div>
       
         <div class="btn_part">
-          <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+          <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn"> ${project.type == 'mobile' ? 'Download <i class="fa fa-android"></i>' : 'View Live <i class="fa fa-globe"></i>'}</button></a>
         </div>
     </div>
 		</div>
@@ -195,8 +195,8 @@ const handleFilter = (elem, x) => {
         filtered_sorted.forEach((project) => {
           loading_screen.style.display = "none";
           project_container.innerHTML += `
-				<div class="p_cards">
-					<div class="p_image">
+				<div class="${project.type == 'mobile' ? 'p_cards mobile' : 'p_cards'}">
+			    <div class="${project.type == 'mobile' ? 'p_image mobile' : 'p_image'}">
 						<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
 					</div>
           <div class="info">
@@ -206,7 +206,7 @@ const handleFilter = (elem, x) => {
             </div>
 						
             <div class="btn_part">
-              <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+              <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">${project.type == 'mobile' ? 'Download <i class="fa fa-android"></i>' : 'View Live <i class="fa fa-globe"></i>'}</button></a>
             </div>
           </div>
          
@@ -217,8 +217,8 @@ const handleFilter = (elem, x) => {
         sorted_array.forEach((project) => {
           loading_screen.style.display = "none";
           project_container.innerHTML += `
-				<div class="p_cards">
-					<div class="p_image">
+				<div class="${project.type == 'mobile' ? 'p_cards mobile' : 'p_cards'}">
+			    <div class="${project.type == 'mobile' ? 'p_image mobile' : 'p_image'}">
 						<img src="${project.screenshot}" width="100%" height="100%" alt="${project.name} image">
 					</div>
           <div class="info">
@@ -228,7 +228,7 @@ const handleFilter = (elem, x) => {
             </div>
           
             <div class="btn_part">
-              <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">View Live <i class="fa fa-globe"></i></button></a>
+              <a href="${project.link}" target="_blank" title="${project.title}"><button class="btn">${project.type == 'mobile' ? 'Download <i class="fa fa-android"></i>' : 'View Live <i class="fa fa-globe"></i>'}</button></a>
             </div>
         </div>
 				</div>
@@ -242,6 +242,7 @@ const handleFilter = (elem, x) => {
 var count_all = document.querySelector("span.count_all"),
   count_landing = document.querySelector("span.count_landing"),
   count_api = document.querySelector("span.count_api"),
+  count_mobile = document.querySelector("span.count_mobile"),
   count_personal = document.querySelector("span.count_personal"),
   count_formal = document.querySelector("span.count_formal"),
   options = document.querySelectorAll(".custom_select option");
@@ -255,6 +256,7 @@ const count_projects = () => {
           (project) => project.type == "landing_page"
         ).length,
         api_projects = data.filter((project) => project.type == "api").length,
+        mobile_projects = data.filter((project) => project.type == "mobile").length,
         personal_projects = data.filter(
           (project) => project.type == "personal_project"
         ).length,
@@ -273,35 +275,37 @@ const count_projects = () => {
       count_all.innerText = `${all_projects}+`;
       count_landing.innerText = `${landing_projects}+`;
       count_api.innerText = `${api_projects}+`;
+      count_mobile.innerText = `${mobile_projects}+`;
       count_personal.innerText = `${personal_projects}+`;
       count_formal.innerText = `${formal_projects}+`;
 
       options[0].textContent = `All (${all_projects}+)`;
       options[1].textContent = `Landing Pages (${landing_projects}+)`;
       options[2].textContent = `API's (${api_projects}+)`;
-      options[3].textContent = `Personal Projects (${personal_projects}+)`;
-      options[4].textContent = `Formal Projects (${formal_projects}+)`;
+      options[3].textContent = `Mobile (${mobile_projects}+)`;
+      options[4].textContent = `Personal Projects (${personal_projects}+)`;
+      options[5].textContent = `Formal Projects (${formal_projects}+)`;
     });
 };
 count_projects();
 
 /*Message Form Functionality*/
 const contact_form = document.querySelector("form.cform"),
-      send_btn = document.querySelector(".send_btn");
+  send_btn = document.querySelector(".send_btn");
 
-     
+
 contact_form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   // alert("Button Working");
   send_btn.disabled = true;
-  send_btn.innerText = "Sending..."; 
+  send_btn.innerText = "Sending...";
   send_btn.classList.add("disabled");
 
   emailjs.sendForm("service_uavpl8r", "template_8nni17a", contact_form).then(
     () => {
 
-     
+
       Swal.fire({
         icon: "success",
         title: "Message Sent!",

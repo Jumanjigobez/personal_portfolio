@@ -231,7 +231,6 @@
     "link": "https://jumanjigobez.github.io/News_Homepage",
     "type": "personal_project"
   },
-
   {
     "id": 33,
     "screenshot": "https://github.com/user-attachments/assets/47ffe4d1-d29c-496c-84bf-943c3b914fa7",
@@ -256,7 +255,6 @@
     "link": "https://jumanjigobez.github.io/snap_intro_section/",
     "type": "landing_page"
   },
-
   {
     "id": 37,
     "screenshot": "https://github.com/Jumanjigobez/social_dashboard/assets/73429193/93e41155-0fc6-45bb-b9ee-182f4270f4e8",
@@ -321,7 +319,6 @@
     "link": "https://ciik.org",
     "type": "formal_project"
   },
-  
   {
     "id": 45,
     "screenshot": "images/kuhabwo.png",
@@ -337,6 +334,21 @@
     "info": "A web-based application system designed to facilitate market trade and marketing activities for farmers, traders, and consumers. Dev using React Js with PHP & MySQL",
     "link": "https://sokolangu.infinityfreeapp.com",
     "type": "personal_project"
+  },
+  {
+    "id": 47,
+    "screenshot": "https://github.com/user-attachments/assets/8efbd7d0-80bc-46ef-bb31-26071acf6067",
+    "title": "SkySafari",
+    "info": "A weather and location-based application designed to provide real-time weather data and geolocation insights. Built with React Native and powered by Expo",
+    "link": "https://tinyurl.com/skysafari1",
+    "type": "mobile"
+  },
+  {
+    "id": 48,
+    "screenshot": "https://github.com/user-attachments/assets/d11ce746-1b26-4492-a764-c3cd238b968e",
+    "title": "Noor Mushaf",
+    "info": "The Light of the Quran - Always With You! Read the Quran. Pure. Offline. Without Distractions, Annoying Ads etc.. Dev using React Native with Expo",
+    "link": "https://tinyurl.com/Nmushaf1",
+    "type": "mobile"
   }
 ]
-

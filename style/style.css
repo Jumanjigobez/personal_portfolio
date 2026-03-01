@@ -785,6 +785,9 @@ a {
   cursor: pointer;
   transition: all linear 0.5s;
 }
+#projects .part_2 .container .p_cards.mobile{
+  height: 720px;
+}
 #projects .part_2 .container .p_cards .info p {
   text-align: left;
 }
@@ -798,6 +801,9 @@ a {
   border-radius: 6px 6px 0px 0px;
   position: relative;
   overflow: hidden;
+}
+#projects .part_2 .container .p_cards .p_image.mobile{
+  height: 400px;
 }
 #projects .part_2 .container .p_cards .p_image img {
   border-radius: 6px 6px 0px 0px;
