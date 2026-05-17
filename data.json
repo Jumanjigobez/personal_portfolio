@@ -47,14 +47,7 @@
     "link": "https://jumanjigobez.github.io/Form_Validation/",
     "type": "personal_project"
   },
-  {
-    "id": 7,
-    "screenshot": "https://user-images.githubusercontent.com/73429193/203296203-d99c9234-cfca-4d5e-9813-3c28e06fb348.PNG",
-    "title": "Millenium Booklets",
-    "info": "A simple and responsive site that provides past paper booklets for students, displaying fees for each booklet. Developed using only HTML, CSS, and JavaScript.",
-    "link": "https://jumanjigobez.github.io/milleniumbooklets/",
-    "type": "formal_project"
-  },
+ 
   {
     "id": 8,
     "screenshot": "images/portfolio.png",
@@ -175,14 +168,7 @@
     "link": "https://jumanjigobez.github.io/tip_calculator/",
     "type": "personal_project"
   },
-  {
-    "id": 23,
-    "screenshot": "images/delight.jpg",
-    "title": "Delightsome Community Initiative",
-    "info": "A community-based organization dedicated to supporting street families. Developed using HTML, CSS, and JavaScript.",
-    "link": "https://www.delightsome.org",
-    "type": "formal_project"
-  },
+ 
   {
     "id": 24,
     "screenshot": "images/fencing.png",
@@ -207,14 +193,7 @@
     "link": "https://homesys.infinityfreeapp.com/",
     "type": "personal_project"
   },
-  {
-    "id": 29,
-    "screenshot": "images/blossoms.png",
-    "title": "Blossoms of Ghetto",
-    "info": "A custom-designed website with a few animations, built using HTML5, CSS3, and vanilla JavaScript. Explore it now...",
-    "link": "https://www.blossomsofghetto.org",
-    "type": "formal_project"
-  },
+  
   {
     "id": 30,
     "screenshot": "images/reality.png",
@@ -303,22 +282,7 @@
     "link": "https://jumanjigobez.github.io/J-Transcriptor",
     "type": "personal_project"
   },
-  {
-    "id": 43,
-    "screenshot": "images/commii.png",
-    "title": "Community Implementing Initiative",
-    "info": "A Community Based Organization designed to give hope and restore dignity to the girl child and most vulnerable children in the community.",
-    "link": "https://commii.co.ke",
-    "type": "formal_project"
-  },
-  {
-    "id": 44,
-    "screenshot": "images/ciik.png",
-    "title": "Community Implementing Initiative Kenya",
-    "info": "A Non-Governmental Organization, umbrella of Community Implementing Initiative.Developed with basic HTML, CSS, and JavaScript.",
-    "link": "https://ciik.org",
-    "type": "formal_project"
-  },
+ 
   {
     "id": 45,
     "screenshot": "images/kuhabwo.png",
