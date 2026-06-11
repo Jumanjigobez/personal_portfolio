@@ -440,7 +440,7 @@ a {
   margin-top: 10px;
   font-size: 14px;
   font-weight: 300;
-  transition: all 0.2s linear;
+  /* transition: all 0.2s linear; */
 }
 #services .part_2 .box:hover h4,
 #services .part_2 .box:hover p {
